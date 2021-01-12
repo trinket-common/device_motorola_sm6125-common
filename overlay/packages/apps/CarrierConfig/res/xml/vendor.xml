@@ -1,0 +1,3651 @@
+<?xml version="1.0" encoding="utf-8"?>
+<carrier_config_list>
+    <carrier_config>
+        <boolean name="allow_video_call_in_low_battery" value="true" />
+        <boolean name="default_carrierconfig_loaded" value="true" />
+        <boolean name="show_ims_registration_status_bool" value="true" />
+        <boolean name="display_in_call_notification_wifi_icon_bool" value="false" />
+    </carrier_config>
+    <carrier_config customerid="verizon" mcc="001">
+        <boolean name="carrier_volte_provisioning_required_bool" value="true" />
+        <boolean name="carrier_allow_turnoff_ims_bool" value="false" />
+        <boolean name="carrier_volte_tty_supported_bool" value="true" />
+        <boolean name="rtt_supported_bool" value="true" />
+        <boolean name="support_pause_ims_video_calls_bool" value="true" />
+        <boolean name="editable_wfc_mode_bool" value="false" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
+        <boolean name="allow_video_call_in_low_battery" value="true" />
+        <boolean name="carrier_allow_vce_bool" value="true" />
+        <boolean name="carrier_wfc_mdn_required_bool" value="true" />
+        <boolean name="downgrade_video_call_when_mobile_data_off" value="false" />
+        <boolean name="moto_auto_resume_holding_call" value="true" />
+        <boolean name="use_rcs_presence_bool" value="true" />
+        <boolean name="show_iccid_in_sim_status_bool" value="true" />
+    </carrier_config>
+    <carrier_config customerid="sprint" mcc="001">
+        <boolean name="carrier_volte_available_bool" value="false" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+    </carrier_config>
+    <carrier_config carrierid="att" mcc="001">
+        <boolean name="editable_wfc_mode_bool" value="false" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+    </carrier_config>
+    <carrier_config haspackage="summit" mcc="001">
+        <string name="config_ims_package_override_string">com.summit.motorola.rcs</string>
+    </carrier_config>
+    <carrier_config mcc="001">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="ignore_data_enabled_changed_for_video_calls" value="true" />
+        <boolean name="vilte_data_is_metered_bool" value="false" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="202">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+        <int name="maxSubjectLength" value="80" />
+    </carrier_config>
+    <carrier_config mcc="202" mnc="01">
+        <int name="smsToMmsTextThreshold" value="-1" />
+    </carrier_config>
+    <carrier_config mcc="204">
+        <boolean name="always_show_emergency_alert_onoff_bool" value="true" />
+        <boolean name="carrier_force_disable_etws_cmas_test_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="206">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="208">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+    </carrier_config>
+    <carrier_config mcc="208" mnc="16">
+        <int name="smsToMmsTextThreshold" value="6" />
+        <string-array name="non_roaming_operator_string_array" num="1">
+            <item value="20801" />
+        </string-array>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+    </carrier_config>
+    <carrier_config mcc="208" mnc="35">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+    </carrier_config>
+    <carrier_config mcc="212">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="213">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="214">
+        <boolean name="smsUsesSimpleCharactersOnly" value="true" />
+    </carrier_config>
+    <carrier_config mcc="216">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+    </carrier_config>
+    <carrier_config mcc="218">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="219">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="219" mnc="01">
+        <int name="smsToMmsTextThreshold" value="-1" />
+    </carrier_config>
+    <carrier_config mcc="220">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="220" mnc="04">
+        <int name="smsToMmsTextThreshold" value="-1" />
+    </carrier_config>
+    <carrier_config mcc="222">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="222" mnc="06">
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="222" mnc="88">
+        <int name="smsToMmsTextThreshold" value="-1" />
+        <int name="maxMessageSize" value="307200" />
+    </carrier_config>
+    <carrier_config mcc="222" mnc="99">
+        <int name="smsToMmsTextThreshold" value="-1" />
+        <int name="recipientLimit" value="200" />
+        <int name="maxMessageSize" value="307200" />
+    </carrier_config>
+    <carrier_config mcc="226">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="226" mnc="03">
+        <int name="smsToMmsTextThreshold" value="-1" />
+    </carrier_config>
+    <carrier_config mcc="226" mnc="06">
+        <int name="smsToMmsTextThreshold" value="-1" />
+    </carrier_config>
+    <carrier_config mcc="228">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="230">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="230" mnc="01">
+        <int name="smsToMmsTextThreshold" value="3" />
+    </carrier_config>
+    <carrier_config mcc="230" mnc="03">
+        <int name="wfc_spn_format_idx_int" value="11" />
+    </carrier_config>
+    <carrier_config mcc="231">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="231" mnc="02">
+        <int name="smsToMmsTextThreshold" value="-1" />
+    </carrier_config>
+    <carrier_config mcc="232">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="232" mnc="03">
+        <int name="smsToMmsTextThreshold" value="5" />
+    </carrier_config>
+    <carrier_config mcc="232" mnc="07">
+        <int name="smsToMmsTextThreshold" value="5" />
+    </carrier_config>
+    <carrier_config mcc="234">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+    </carrier_config>
+    <carrier_config mcc="238">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="240">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="242">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="244">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="246">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="247">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="248">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="250">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+        <string-array name="carrier_additional_cbs_channels_strings" num="11">
+            <item value="50:emergency=true" />
+            <item value="1000:emergency=true" />
+            <item value="1001:emergency=true" />
+            <item value="1002:emergency=true" />
+            <item value="1003:emergency=true" />
+            <item value="1004:emergency=true" />
+            <item value="1005:emergency=true" />
+            <item value="1006:emergency=true" />
+            <item value="1007:emergency=true" />
+            <item value="1008:emergency=true" />
+            <item value="1009:emergency=true" />
+        </string-array>
+    </carrier_config>
+    <carrier_config mcc="255">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="259">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="260">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="false" />
+    </carrier_config>
+    <carrier_config mcc="260" mnc="02">
+        <int name="smsToMmsTextThreshold" value="-1" />
+    </carrier_config>
+    <carrier_config mcc="260" mnc="12">
+        <string name="moto_preferred_display_name">[PNN]</string>
+        <boolean name="moto_bypass_nr_available_check" value="true" />
+    </carrier_config>
+    <carrier_config mcc="262">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="262" mnc="01">
+        <int name="smsToMmsTextThreshold" value="-1" />
+    </carrier_config>
+    <carrier_config mcc="262" mnc="03">
+        <int name="smsToMmsTextThreshold" value="-1" />
+    </carrier_config>
+    <carrier_config mcc="262" mnc="04">
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="262" mnc="07">
+        <int name="smsToMmsTextThreshold" value="-1" />
+    </carrier_config>
+    <carrier_config mcc="268">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="270">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="272">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+    </carrier_config>
+    <carrier_config mcc="274">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="276">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+    </carrier_config>
+    <carrier_config mcc="278">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="280">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="282">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="283">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="284">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+    </carrier_config>
+    <carrier_config mcc="286">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="288">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="289">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="290">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="292">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="293">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="294">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="294" mnc="01">
+        <int name="smsToMmsTextThreshold" value="2" />
+    </carrier_config>
+    <carrier_config mcc="295">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="297">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="297" mnc="02">
+        <int name="smsToMmsTextThreshold" value="-1" />
+    </carrier_config>
+    <carrier_config mcc="302">
+        <boolean name="hide_ims_apn_bool" value="true" />
+        <boolean name="display_in_call_notification_wifi_icon_bool" value="true" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="false" />
+    </carrier_config>
+    <carrier_config mcc="310">
+        <boolean name="display_in_call_notification_wifi_icon_bool" value="true" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="false" />
+        <boolean name="hide_lte_plus_data_icon_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="311">
+        <boolean name="display_in_call_notification_wifi_icon_bool" value="true" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="false" />
+        <boolean name="hide_lte_plus_data_icon_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="312">
+        <boolean name="display_in_call_notification_wifi_icon_bool" value="true" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="false" />
+    </carrier_config>
+    <carrier_config mcc="313">
+        <boolean name="display_in_call_notification_wifi_icon_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="314">
+        <boolean name="display_in_call_notification_wifi_icon_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="315">
+        <boolean name="display_in_call_notification_wifi_icon_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="316">
+        <boolean name="display_in_call_notification_wifi_icon_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="330">
+        <boolean name="moto_enable_service_dialing_number" value="true" />
+    </carrier_config>
+    <carrier_config mcc="334">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="maxSubjectLength" value="80" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+        <boolean name="moto_enable_service_dialing_number" value="true" />
+    </carrier_config>
+    <carrier_config mcc="338">
+        <int name="maxImageWidth" value="2592" />
+        <int name="maxImageHeight" value="1944" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+        <boolean name="moto_enable_service_dialing_number" value="true" />
+    </carrier_config>
+    <carrier_config mcc="340">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+        <boolean name="moto_enable_service_dialing_number" value="true" />
+    </carrier_config>
+    <carrier_config mcc="342">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+        <boolean name="moto_enable_service_dialing_number" value="true" />
+    </carrier_config>
+    <carrier_config mcc="344">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+        <boolean name="moto_enable_service_dialing_number" value="true" />
+    </carrier_config>
+    <carrier_config mcc="346">
+        <boolean name="moto_enable_service_dialing_number" value="true" />
+    </carrier_config>
+    <carrier_config mcc="348">
+        <boolean name="moto_enable_service_dialing_number" value="true" />
+    </carrier_config>
+    <carrier_config mcc="350">
+        <boolean name="moto_enable_service_dialing_number" value="true" />
+    </carrier_config>
+    <carrier_config mcc="352">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+        <boolean name="moto_enable_service_dialing_number" value="true" />
+    </carrier_config>
+    <carrier_config mcc="354">
+        <boolean name="moto_enable_service_dialing_number" value="true" />
+    </carrier_config>
+    <carrier_config mcc="356">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+        <boolean name="moto_enable_service_dialing_number" value="true" />
+    </carrier_config>
+    <carrier_config mcc="358">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+        <boolean name="moto_enable_service_dialing_number" value="true" />
+    </carrier_config>
+    <carrier_config mcc="360">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+        <boolean name="moto_enable_service_dialing_number" value="true" />
+    </carrier_config>
+    <carrier_config mcc="362">
+        <boolean name="moto_enable_service_dialing_number" value="true" />
+    </carrier_config>
+    <carrier_config mcc="363">
+        <boolean name="moto_enable_service_dialing_number" value="true" />
+    </carrier_config>
+    <carrier_config mcc="364">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+        <boolean name="moto_enable_service_dialing_number" value="true" />
+    </carrier_config>
+    <carrier_config mcc="365">
+        <boolean name="moto_enable_service_dialing_number" value="true" />
+    </carrier_config>
+    <carrier_config mcc="366">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+        <boolean name="moto_enable_service_dialing_number" value="true" />
+    </carrier_config>
+    <carrier_config mcc="368">
+        <boolean name="moto_enable_service_dialing_number" value="true" />
+    </carrier_config>
+    <carrier_config mcc="370">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="maxSubjectLength" value="80" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+        <boolean name="smsUsesSimpleCharactersOnly" value="true" />
+        <boolean name="moto_enable_service_dialing_number" value="true" />
+    </carrier_config>
+    <carrier_config mcc="372">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+        <boolean name="moto_enable_service_dialing_number" value="true" />
+    </carrier_config>
+    <carrier_config mcc="374">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+        <boolean name="moto_enable_service_dialing_number" value="true" />
+    </carrier_config>
+    <carrier_config mcc="376">
+        <boolean name="moto_enable_service_dialing_number" value="true" />
+    </carrier_config>
+    <carrier_config mcc="400">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="401">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="402">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="404">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+        <int name="moto_back_to_auto_network_selection_timer" value="300000" />
+    </carrier_config>
+    <carrier_config mcc="405">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+        <int name="moto_back_to_auto_network_selection_timer" value="300000" />
+    </carrier_config>
+    <carrier_config mcc="410">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="412">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="413">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="414">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="415">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="416">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="417">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="418">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="419">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="420">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="421">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="422">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="424">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="425">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="426">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="427">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="428">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="429">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="430">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="431">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="432">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="434">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="436">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="437">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="438">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="440">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="441">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="450">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="452">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="454">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="455">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="455" mnc="02" name="Macao Telecom">
+        <int name="volte_replacement_rat_int" value="6" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="ignore_data_enabled_changed_for_video_calls" value="true" />
+        <boolean name="vilte_data_is_metered_bool" value="false" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_ims_setting_reset_after_sim_swap_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="moto_convert_plus_for_ims_call_bool" value="false" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="455" mnc="07" name="Macao Telecom">
+        <int name="volte_replacement_rat_int" value="6" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="ignore_data_enabled_changed_for_video_calls" value="true" />
+        <boolean name="vilte_data_is_metered_bool" value="false" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_ims_setting_reset_after_sim_swap_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="moto_convert_plus_for_ims_call_bool" value="false" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="456">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="457">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="460">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+        <boolean name="support_pause_ims_video_calls_bool" value="false" />
+        <boolean name="ascii_7_bit_support_for_long_message_bool" value="true" />
+        <string-array name="carrier_metered_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <string-array name="carrier_metered_roaming_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="moto_auto_resume_holding_call" value="false" />
+    </carrier_config>
+    <carrier_config mcc="466">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+        <string-array name="carrier_additional_cbs_channels_strings" num="2">
+            <item value="911:emergency=true,type=other" />
+            <item value="919:emergency=true,type=other" />
+        </string-array>
+    </carrier_config>
+    <carrier_config mcc="467">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="470">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="472">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="502">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="505">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+        <boolean name="prefer_2g_bool" value="false" />
+    </carrier_config>
+    <carrier_config mcc="510">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="514">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="515">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="520">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="525">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config gid1="0A" mcc="525" mnc="05">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="528">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="530">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="536">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="537">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="539">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="540">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="541">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="542">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="544">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="545">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="546">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="547">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="548">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="549">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="550">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="551">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="552">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="553">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="555">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="602">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="603">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="604">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="605">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="606">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="607">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="608">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="609">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="610">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="611">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="612">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="613">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="614">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="615">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="616">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="617">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="618">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="619">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="620">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="621">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="622">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="623">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="624">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="625">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="626">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="627">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="628">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="629">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="630">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="631">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="632">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="633">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="634">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="635">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="636">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="637">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="638">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="639">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="640">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="641">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="642">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="643">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="645">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="646">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="647">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="648">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="649">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="650">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="651">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="652">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="653">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="654">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="655">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="657">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="659">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="702">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+        <boolean name="moto_enable_service_dialing_number" value="true" />
+    </carrier_config>
+    <carrier_config mcc="704">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="maxSubjectLength" value="80" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+        <boolean name="smsUsesSimpleCharactersOnly" value="true" />
+        <boolean name="moto_enable_service_dialing_number" value="true" />
+    </carrier_config>
+    <carrier_config mcc="706">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="maxSubjectLength" value="80" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+        <boolean name="smsUsesSimpleCharactersOnly" value="true" />
+        <boolean name="moto_enable_service_dialing_number" value="true" />
+    </carrier_config>
+    <carrier_config mcc="708">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="maxSubjectLength" value="80" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+        <boolean name="smsUsesSimpleCharactersOnly" value="true" />
+        <boolean name="moto_enable_service_dialing_number" value="true" />
+    </carrier_config>
+    <carrier_config mcc="710">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="maxSubjectLength" value="80" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+        <boolean name="smsUsesSimpleCharactersOnly" value="true" />
+        <boolean name="moto_enable_service_dialing_number" value="true" />
+    </carrier_config>
+    <carrier_config mcc="712">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="maxSubjectLength" value="80" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+        <boolean name="smsUsesSimpleCharactersOnly" value="true" />
+        <boolean name="moto_enable_service_dialing_number" value="true" />
+    </carrier_config>
+    <carrier_config mcc="714">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="maxSubjectLength" value="80" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+        <boolean name="smsUsesSimpleCharactersOnly" value="true" />
+        <boolean name="moto_enable_service_dialing_number" value="true" />
+    </carrier_config>
+    <carrier_config mcc="716">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <boolean name="smsUsesSimpleCharactersOnly" value="true" />
+        <boolean name="moto_enable_service_dialing_number" value="true" />
+    </carrier_config>
+    <carrier_config cid="718" name="EE">
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
+        <string-array name="non_roaming_operator_string_array" num="6">
+            <item value="23430" />
+            <item value="23431" />
+            <item value="23432" />
+            <item value="23433" />
+            <item value="23434" />
+            <item value="23486" />
+        </string-array>
+        <boolean name="editable_wfc_mode_bool" value="false" />
+    </carrier_config>
+    <carrier_config mcc="722">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="maxSubjectLength" value="80" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+        <boolean name="smsUsesSimpleCharactersOnly" value="true" />
+        <boolean name="moto_enable_service_dialing_number" value="true" />
+    </carrier_config>
+    <carrier_config mcc="724">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="maxSubjectLength" value="80" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+        <boolean name="smsUsesSimpleCharactersOnly" value="true" />
+        <boolean name="moto_enable_service_dialing_number" value="true" />
+        <boolean name="moto_show_brazil_settings" value="true" />
+    </carrier_config>
+    <carrier_config mcc="730">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="maxSubjectLength" value="80" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+        <boolean name="moto_enable_service_dialing_number" value="true" />
+    </carrier_config>
+    <carrier_config mcc="730" mnc="26">
+        <string-array name="non_roaming_operator_string_array" num="15">
+            <item value="73002" />
+            <item value="73003" />
+            <item value="73004" />
+            <item value="73005" />
+            <item value="73006" />
+            <item value="73007" />
+            <item value="73008" />
+            <item value="73009" />
+            <item value="73010" />
+            <item value="73011" />
+            <item value="73012" />
+            <item value="73013" />
+            <item value="73016" />
+            <item value="73019" />
+            <item value="73099" />
+        </string-array>
+        <boolean name="smsUsesSimpleCharactersOnly" value="true" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="shall_filt_ims_conference_dialing_paricipant_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="hide_ims_apn_bool" value="true" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <boolean name="gsm_cdma_calls_can_be_hd_audio" value="true" />
+        <boolean name="carrier_default_wfc_ims_roaming_enabled_bool" value="true" />
+        <int name="wfc_spn_format_idx_int" value="1" />
+    </carrier_config>
+    <carrier_config mcc="732">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="maxSubjectLength" value="80" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+        <boolean name="smsUsesSimpleCharactersOnly" value="true" />
+        <boolean name="moto_enable_service_dialing_number" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="hide_ims_apn_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="734">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="maxSubjectLength" value="80" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+        <boolean name="smsUsesSimpleCharactersOnly" value="true" />
+        <boolean name="moto_enable_service_dialing_number" value="true" />
+    </carrier_config>
+    <carrier_config mcc="736">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+        <boolean name="moto_enable_service_dialing_number" value="true" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="false" />
+    </carrier_config>
+    <carrier_config mcc="738">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+        <boolean name="moto_enable_service_dialing_number" value="true" />
+    </carrier_config>
+    <carrier_config mcc="740">
+        <int name="recipientLimit" value="20" />
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="maxSubjectLength" value="80" />
+        <int name="smsToMmsTextThreshold" value="6" />
+        <boolean name="smsUsesSimpleCharactersOnly" value="true" />
+        <boolean name="moto_enable_service_dialing_number" value="true" />
+    </carrier_config>
+    <carrier_config mcc="744">
+        <int name="recipientLimit" value="20" />
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="maxSubjectLength" value="80" />
+        <int name="smsToMmsTextThreshold" value="6" />
+        <boolean name="smsUsesSimpleCharactersOnly" value="true" />
+        <boolean name="moto_enable_service_dialing_number" value="true" />
+    </carrier_config>
+    <carrier_config mcc="746">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="smsToMmsTextThreshold" value="6" />
+    </carrier_config>
+    <carrier_config mcc="748">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <int name="maxSubjectLength" value="80" />
+        <int name="smsToMmsTextThreshold" value="6" />
+        <boolean name="smsUsesSimpleCharactersOnly" value="true" />
+        <boolean name="moto_enable_service_dialing_number" value="true" />
+    </carrier_config>
+    <carrier_config mcc="750">
+        <boolean name="moto_enable_service_dialing_number" value="true" />
+    </carrier_config>
+    <carrier_config device="deen">
+        <boolean name="sim_lock_is_valid_sim_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="1" name="T-Mobile - US">
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="true" />
+        <boolean name="show_iccid_in_sim_status_bool" value="true" />
+        <boolean name="support_video_conference_call_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="1" haspackage="summit" name="T-Mobile - US">
+        <string name="config_ims_package_override_string">com.summit.motorola.rcs</string>
+    </carrier_config>
+    <carrier_config cid="3" name="Telekom">
+        <boolean name="editable_wfc_mode_bool" value="false" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+        <string-array name="carrier_metered_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <string-array name="carrier_metered_roaming_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <boolean name="enable_omacp_bool" value="false" />
+        <boolean name="moto_display_noservice_dataiwlan_wificallingdisable" value="true" />
+    </carrier_config>
+    <carrier_config cid="4" name="T-Mobile/tele.ring">
+        <boolean name="enable_omacp_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="5" name="T-Mobile">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <boolean name="enabledMMS" value="true" />
+        <boolean name="smsUsesSimpleCharactersOnly" value="true" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="hide_ims_apn_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
+        <boolean name="editable_wfc_mode_bool" value="false" />
+        <boolean name="editable_voicemail_number_setting_bool" value="false" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true" />
+        <boolean name="hide_lte_plus_data_icon_bool" value="true" />
+        <boolean name="call_barring_visibility_bool" value="true" />
+        <string-array name="carrier_metered_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <string-array name="carrier_metered_roaming_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="true" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <boolean name="enable_omacp_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="6" name="T-Mobile">
+        <boolean name="enable_omacp_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="7" name="T-Mobile">
+        <boolean name="enable_omacp_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="8" name="Magyar Telekom">
+        <boolean name="enable_omacp_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="9" name="Hrvaski Telekom">
+        <boolean name="enable_omacp_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="10" name="T-Mobile - ME">
+        <boolean name="enable_omacp_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="11" name="Slovak Telekom">
+        <boolean name="enable_omacp_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="13" name="Mkedonski Telecom AD Skopje">
+        <boolean name="enable_omacp_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="15" name="Vodafone">
+        <int name="moto_back_to_auto_network_selection_timer" value="60000" />
+        <boolean name="prefer_2g_bool" value="false" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <boolean name="editable_wfc_mode_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <string-array name="non_roaming_operator_string_array" num="1">
+            <item value="50502" />
+        </string-array>
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="16" name="Swisscom">
+        <boolean name="moto_bypass_nr_available_check" value="true" />
+        <string name="vvm_destination_number_string">30047</string>
+        <string name="vvm_type_string">vvm_type_omtp</string>
+        <boolean name="vvm_cellular_data_required_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="18" name="Vodafone">
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <boolean name="editable_wfc_mode_bool" value="false" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <int name="smsToMmsTextThreshold" value="5" />
+        <boolean name="call_barring_visibility_bool" value="true" />
+        <string-array name="carrier_metered_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <string-array name="carrier_metered_roaming_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <int name="wfc_spn_format_idx_int" value="11" />
+        <int name="wfc_flight_mode_spn_format_idx_int" value="11" />
+    </carrier_config>
+    <carrier_config cid="18" name="Vodafone">
+        <boolean name="moto_bypass_nr_available_check" value="true" />
+    </carrier_config>
+    <carrier_config cid="19" name="Vodafone">
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="call_barring_visibility_bool" value="true" />
+        <boolean name="moto_bypass_nr_available_check" value="true" />
+    </carrier_config>
+    <carrier_config cid="20" name="Vodafone">
+        <boolean name="call_barring_visibility_bool" value="true" />
+        <boolean name="moto_bypass_nr_available_check" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="22" name="Vodafone P">
+        <boolean name="prefer_2g_bool" value="false" />
+        <boolean name="call_barring_visibility_bool" value="true" />
+        <boolean name="moto_bypass_nr_available_check" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="23" name="Vodafone">
+        <boolean name="call_barring_visibility_bool" value="true" />
+        <boolean name="moto_bypass_nr_available_check" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="24" name="Vodacom">
+        <boolean name="call_barring_visibility_bool" value="true" />
+        <boolean name="moto_bypass_nr_available_check" value="true" />
+    </carrier_config>
+    <carrier_config cid="25" name="Vodafone">
+        <string-array name="carrier_metered_roaming_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <boolean name="editable_wfc_mode_bool" value="false" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <boolean name="smsUsesSimpleCharactersOnly" value="false" />
+        <boolean name="call_barring_visibility_bool" value="true" />
+        <boolean name="moto_bypass_nr_available_check" value="true" />
+    </carrier_config>
+    <carrier_config cid="26" name="Vodafone">
+        <boolean name="call_barring_visibility_bool" value="true" />
+        <boolean name="moto_bypass_nr_available_check" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="28" name="Vodafone UK">
+        <boolean name="enableSMSDeliveryReports" value="true" />
+        <string-array name="carrier_metered_roaming_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <boolean name="editable_wfc_mode_bool" value="false" />
+        <int name="smsToMmsTextThreshold" value="10" />
+        <boolean name="moto_bypass_nr_available_check" value="true" />
+        <boolean name="call_barring_visibility_bool" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="29" name="Vodafone">
+        <boolean name="smsUsesSimpleCharactersOnly" value="false" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <string-array name="carrier_metered_roaming_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <int name="smsToMmsTextThreshold" value="10" />
+        <boolean name="moto_bypass_nr_available_check" value="true" />
+        <boolean name="call_barring_visibility_bool" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="31" name="Singtel">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="32" name="Orange">
+        <int name="vvm_port_number_int" value="20481" />
+        <string name="vvm_destination_number_string">21101</string>
+        <string name="carrier_vvm_package_name_string">com.orange.vvm</string>
+        <string name="vvm_type_string">vvm_type_omtp</string>
+        <boolean name="vvm_cellular_data_required_bool" value="true" />
+        <int name="maxSubjectLength" value="80" />
+        <int name="smsToMmsTextThreshold" value="-1" />
+        <boolean name="mmsRoamingAutoRetrieveByDefault" value="true" />
+        <string-array name="carrier_metered_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <string-array name="carrier_metered_roaming_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="hide_ims_apn_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="editable_voicemail_number_bool" value="true" />
+        <boolean name="gsm_cdma_calls_can_be_hd_audio" value="true" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <boolean name="show_wfc_location_privacy_policy_bool" value="true" />
+        <boolean name="moto_bypass_nr_available_check" value="true" />
+    </carrier_config>
+    <carrier_config cid="33" name="TIM IT">
+        <boolean name="call_barring_visibility_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="34" name="Movistar">
+        <int name="maxSubjectLength" value="80" />
+        <boolean name="enableMMSReadReports" value="false" />
+        <boolean name="enableMMSDeliveryReports" value="false" />
+        <boolean name="smsUsesSimpleCharactersOnly" value="true" />
+        <int name="maxMessageTextSize" value="-1" />
+        <int name="maxMessageSize" value="512000" />
+        <int name="maxImageHeight" value="480" />
+        <int name="maxImageWidth" value="640" />
+        <string-array name="carrier_metered_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <string-array name="carrier_metered_roaming_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <string-array name="non_roaming_operator_string_array" num="19">
+            <item value="21401" />
+            <item value="21403" />
+            <item value="21404" />
+            <item value="21406" />
+            <item value="21407" />
+            <item value="21408" />
+            <item value="21409" />
+            <item value="214010" />
+            <item value="214011" />
+            <item value="214012" />
+            <item value="214013" />
+            <item value="214014" />
+            <item value="214015" />
+            <item value="214016" />
+            <item value="214017" />
+            <item value="214018" />
+            <item value="214019" />
+            <item value="214020" />
+            <item value="214021" />
+        </string-array>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="hide_ims_apn_bool" value="true" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="451" name="Etisalat">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <boolean name="enable_update_address_for_mo" value="false" />
+    </carrier_config>
+    <carrier_config cid="529" name="Claro BR">
+        <int name="maxMessageSize" value="1048576" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <boolean name="editable_wfc_mode_bool" value="false" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="shall_filt_ims_conference_dialing_paricipant_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="false" />
+        <boolean name="is_ims_conference_size_enforced_bool" value="true" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <boolean name="additional_settings_caller_id_visibility_bool" value="false" />
+        <boolean name="moto_show_wfc_ussd_disclaimer_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="530" name="Vivo">
+        <boolean name="moto_enable_bcch_location_service" value="true" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="gsm_cdma_calls_can_be_hd_audio" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="voicemail_notification_persistent_bool" value="true" />
+        <boolean name="moto_should_restore_unknown_participant_bool" value="true" />
+        <string-array name="non_roaming_operator_string_array" num="4">
+            <item value="72406" />
+            <item value="72410" />
+            <item value="72411" />
+            <item value="72423" />
+        </string-array>
+        <boolean name="support_no_reply_timer_for_cfnry_bool" value="false" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <boolean name="supportMMSOverWifi" value="false" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="530" device="harpia|lux" name="Vivo">
+        <boolean name="hide_ims_apn_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="576" name="Bell Mobility">
+        <boolean name="use_vowifi_call_after_call_fail_sim" value="true" />
+        <int name="emc_connection_limit_int_sim" value="10000" />
+    </carrier_config>
+    <carrier_config cid="624" name="Colombia Movil S.A.">
+        <boolean name="enabledMMS" value="false" />
+        <int name="smsToMmsTextThreshold" value="-1" />
+    </carrier_config>
+    <carrier_config cid="625" name="Movistar">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
+        <boolean name="hide_ims_apn_bool" value="true" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <boolean name="supportMMSOverWifi" value="false" />
+    </carrier_config>
+    <carrier_config cid="679" name="Yoigo">
+        <string-array name="non_roaming_operator_string_array" num="19">
+            <item value="21401" />
+            <item value="21403" />
+            <item value="21405" />
+            <item value="21406" />
+            <item value="21407" />
+            <item value="21408" />
+            <item value="21409" />
+            <item value="214010" />
+            <item value="214011" />
+            <item value="214012" />
+            <item value="214013" />
+            <item value="214014" />
+            <item value="214015" />
+            <item value="214016" />
+            <item value="214017" />
+            <item value="214018" />
+            <item value="214019" />
+            <item value="214020" />
+            <item value="214021" />
+        </string-array>
+        <int name="maxSubjectLength" value="80" />
+        <boolean name="enabledMMS" value="false" />
+        <boolean name="smsUsesSimpleCharactersOnly" value="true" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="1014" name="Vip mobile d.o.o.">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="717" name="Virgin">
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="false" />
+        <boolean name="carrier_volte_available_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="false" />
+        <boolean name="prefer_2g_bool" value="true" />
+        <boolean name="carrier_name_override_bool" value="true" />
+        <string name="carrier_name_string">Virgin</string>
+    </carrier_config>
+    <carrier_config cid="718" name="EE">
+        <int name="smsToMmsTextThreshold" value="10" />
+        <int name="maxSubjectLength" value="80" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <boolean name="use_wfc_home_network_mode_in_roaming_network_bool" value="true" />
+        <boolean name="hide_ims_apn_bool" value="true" />
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <int name="wfc_spn_format_idx_int" value="1" />
+        <boolean name="carrier_name_override_bool" value="true" />
+        <boolean name="display_voicemail_number_as_default_call_forwarding_number" value="true" />
+        <boolean name="prefer_2g_bool" value="false" />
+        <boolean name="hide_lte_plus_data_icon_bool" value="true" />
+        <string name="carrier_name_string">EE</string>
+        <string-array name="wfc_operator_error_codes_string_array" num="1">
+            <item value="REG09|0" />
+        </string-array>
+        <string-array name="non_roaming_operator_string_array" num="6">
+            <item value="23430" />
+            <item value="23431" />
+            <item value="23432" />
+            <item value="23433" />
+            <item value="23434" />
+            <item value="23486" />
+        </string-array>
+    </carrier_config>
+    <carrier_config cid="718" device="channel|river|parker" name="EE">
+        <boolean name="hide_enhanced_4g_lte_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="718" device="parker" name="EE">
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="747" name="Cosmote">
+        <boolean name="enable_omacp_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="759" name="3G Radio System/HKCSL3G">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="760" name="3HK">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="hide_ims_apn_bool" value="false" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="765" name="GSM1800New World PCS Ltd.">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="769" name="PCCW">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="770" name="GSM7800/Hong Kong CSL Ltd.">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="850" name="NTT DOCOMO">
+        <boolean name="vilte_data_is_metered_bool" value="false" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="958" name="Telenor">
+        <boolean name="moto_bypass_nr_available_check" value="true" />
+    </carrier_config>
+    <carrier_config cid="1010" name="Telekom Romania">
+        <boolean name="enable_omacp_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="1011" name="Orange">
+        <boolean name="moto_bypass_nr_available_check" value="true" />
+    </carrier_config>
+    <carrier_config cid="1096" name="CAT CDMA">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="moto_should_restore_unknown_participant_bool" value="true" />
+        <string-array name="moto_prefixs_for_restore_cep_string_array" num="2">
+            <item value="0" />
+            <item value="+66" />
+        </string-array>
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="1098" name="AIS">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="1187" name="AT&amp;T">
+        <string-array name="new_apn_default_value_fields_string_array" num="3">
+            <item value="type:default" />
+            <item value="protocol:IPV4V6" />
+            <item value="roaming_protocol:IPV4V6" />
+        </string-array>
+        <string name="show_carrier_data_icon_pattern_string">AT&amp;T\.\.\.[12]$</string>
+        <string name="5g_icon_configuration_string">connected_mmwave:5G_Plus,connected:5G,not_restricted:5G,restricted:None</string>
+    </carrier_config>
+    <carrier_config cid="1187" haspackage="summit" name="AT&amp;T">
+        <string name="config_ims_package_override_string">com.summit.motorola.rcs</string>
+    </carrier_config>
+    <carrier_config cid="1328" name="Telekom Albania">
+        <boolean name="enable_omacp_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="1337" name="Movistar">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="gsm_cdma_calls_can_be_hd_audio" value="true" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
+        <boolean name="carrier_default_wfc_ims_roaming_enabled_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="hide_ims_apn_bool" value="true" />
+        <boolean name="prefer_2g_bool" value="false" />
+        <boolean name="supportMMSOverWifi" value="false" />
+        <string name="gps.supl_mode">1</string>
+        <string name="gps.supl_host">h-slp.mnc007.mcc722.pub.3gppnetwork.org</string>
+        <string name="gps.supl_ver">0x20000</string>
+        <string name="gps.lpp_profile">3</string>
+        <string name="gps.es_extension_sec">0</string>
+    </carrier_config>
+    <carrier_config cid="1338" name="Claro AR">
+        <int name="maxMessageSize" value="614400" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="editable_wfc_mode_bool" value="false" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="hide_ims_apn_bool" value="true" />
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="true" />
+        <boolean name="supportMMSOverWifi" value="false" />
+        <boolean name="is_ims_conference_size_enforced_bool" value="true" />
+        <int name="ims_conference_size_limit_int" value="5" />
+    </carrier_config>
+    <carrier_config cid="1345" name="Telstra">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="support_video_conference_call_bool" value="true" />
+        <boolean name="hide_ims_apn_bool" value="true" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <boolean name="hide_lte_plus_data_icon_bool" value="false" />
+        <int name="maxMessageSize" value="2097152" />
+        <boolean name="supportMMSOverWifi" value="false" />
+    </carrier_config>
+    <carrier_config cid="1365" name="Proximus">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_roaming_enabled_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="1366" name="Orange">
+        <boolean name="moto_bypass_nr_available_check" value="true" />
+    </carrier_config>
+    <carrier_config cid="1367" name="BASE">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+    </carrier_config>
+    <carrier_config cid="1348" name="Vodafone">
+        <int name="moto_back_to_auto_network_selection_timer" value="60000" />
+        <boolean name="prefer_2g_bool" value="false" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <boolean name="editable_wfc_mode_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <string-array name="non_roaming_operator_string_array" num="1">
+            <item value="50502" />
+        </string-array>
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="1371" name="Telenor">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="moto_should_restore_unknown_participant_bool" value="true" />
+        <string-array name="moto_prefixs_for_restore_cep_string_array" num="2">
+            <item value="0" />
+            <item value="+35" />
+        </string-array>
+        <boolean name="hide_ims_apn_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="1380" name="Nuevatel S.A.">
+        <boolean name="config_hideLtePlus" value="true" />
+        <boolean name="config_show4GForLTE" value="false" />
+    </carrier_config>
+    <carrier_config cid="1381" name="ENTEL S.A.">
+        <boolean name="config_hideLtePlus" value="true" />
+        <boolean name="config_show4GForLTE" value="false" />
+    </carrier_config>
+    <carrier_config cid="1382" name="Telecel S.A.">
+        <boolean name="config_hideLtePlus" value="true" />
+        <boolean name="config_show4GForLTE" value="false" />
+    </carrier_config>
+    <carrier_config cid="1385" name="TIM">
+        <int name="maxMessageSize" value="1048576" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="1385" device="lux" name="TIM">
+        <boolean name="hide_ims_apn_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="1403" name="Rogers">
+        <string-array name="read_only_apn_types_string_array" num="0" />
+        <boolean name="carrier_name_override_bool" value="false" />
+        <string name="carrier_name_string" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <boolean name="use_vowifi_call_after_call_fail_sim" value="true" />
+        <int name="emc_connection_limit_int_sim" value="10000" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <string name="wfc_emergency_address_carrier_app_string">http://www.rogers.com/AndroidWiFi/</string>
+    </carrier_config>
+    <carrier_config cid="1404" name="TELUS Mobility">
+        <boolean name="prefer_2g_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="1427" name="Entel">
+        <string-array name="non_roaming_operator_string_array" num="15">
+            <item value="73002" />
+            <item value="73003" />
+            <item value="73004" />
+            <item value="73005" />
+            <item value="73006" />
+            <item value="73007" />
+            <item value="73008" />
+            <item value="73009" />
+            <item value="73010" />
+            <item value="73011" />
+            <item value="73012" />
+            <item value="73013" />
+            <item value="73016" />
+            <item value="73019" />
+            <item value="73099" />
+        </string-array>
+        <boolean name="smsUsesSimpleCharactersOnly" value="true" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="shall_filt_ims_conference_dialing_paricipant_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="hide_ims_apn_bool" value="true" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <boolean name="carrier_default_wfc_ims_roaming_enabled_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="1430" name="WOM Chile">
+        <boolean name="enabledMMS" value="false" />
+        <int name="maxMessageSize" value="614400" />
+        <boolean name="smsUsesSimpleCharactersOnly" value="true" />
+        <string-array name="non_roaming_operator_string_array" num="15">
+            <item value="73001" />
+            <item value="73002" />
+            <item value="73003" />
+            <item value="73004" />
+            <item value="73005" />
+            <item value="73006" />
+            <item value="73007" />
+            <item value="73008" />
+            <item value="73010" />
+            <item value="73011" />
+            <item value="73012" />
+            <item value="73013" />
+            <item value="73016" />
+            <item value="73019" />
+            <item value="73099" />
+        </string-array>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="hide_ims_apn_bool" value="true" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_roaming_enabled_bool" value="true" />
+        <boolean name="hide_lte_plus_data_icon_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="1442" name="Claro CO">
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="1452" name="Vodafone CZ">
+        <boolean name="call_barring_visibility_bool" value="true" />
+        <boolean name="moto_bypass_nr_available_check" value="true" />
+        <boolean name="smsUsesSimpleCharactersOnly" value="true" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="ignore_data_enabled_changed_for_video_calls" value="true" />
+        <boolean name="vilte_data_is_metered_bool" value="false" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="1467" name="Claro Dominican Republic">
+        <boolean name="hide_lte_plus_data_icon_bool" value="true" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="false" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="hide_ims_apn_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+    </carrier_config>
+    <carrier_config cid="1473" name="Claro EC">
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="1492" name="O2">
+        <boolean name="enableSMSDeliveryReports" value="true" />
+        <boolean name="call_barring_visibility_bool" value="true" />
+        <int name="wfc_spn_format_idx_int" value="1" />
+        <int name="maxSubjectLength" value="80" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="prefer_2g_bool" value="false" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
+        <boolean name="carrier_volte_provisioning_required_bool" value="true" />
+        <boolean name="carrier_volte_override_wfc_provisioning_bool" value="true" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+        <int name="smsToMmsTextThreshold" value="-1" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <boolean name="hide_ims_apn_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="1505" name="Three Mobile">
+        <int name="smsToMmsTextThreshold" value="6" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="editable_wfc_mode_bool" value="false" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <boolean name="use_wfc_home_network_mode_in_roaming_network_bool" value="true" />
+        <boolean name="mmsRoamingAutoRetrieveByDefault" value="true" />
+        <int name="recipientLimit" value="20" />
+        <int name="moto_back_to_auto_network_selection_timer" value="60000" />
+        <boolean name="carrier_name_override_bool" value="true" />
+        <string name="carrier_name_string">3</string>
+        <string-array name="carrier_metered_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <boolean name="supportMMSOverWifi" value="false" />
+    </carrier_config>
+    <carrier_config cid="1520" name="Claro Guatemala">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="hide_ims_apn_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <boolean name="editable_wfc_mode_bool" value="false" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="false" />
+        <boolean name="hide_lte_plus_data_icon_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="1521" name="Tigo Guatemala">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="hide_ims_apn_bool" value="true" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="false" />
+        <boolean name="hide_lte_plus_data_icon_bool" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="1522" name="Movistar">
+        <boolean name="config_show4GForLTE" value="false" />
+    </carrier_config>
+    <carrier_config cid="1526" name="1O1O / csl">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="1530" name="A1/Tomato">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="1535" name="Vodafone">
+        <boolean name="call_barring_visibility_bool" value="true" />
+        <boolean name="moto_bypass_nr_available_check" value="true" />
+        <int name="smsToMmsTextThreshold" value="10" />
+        <boolean name="smsUsesSimpleCharactersOnly" value="true" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="1573" name="Wind">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="always_play_remote_hold_tone_bool" value="true" />
+        <int name="recipientLimit" value="200" />
+        <int name="smsToMmsTextThreshold" value="-1" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <boolean name="editable_voicemail_number_bool" value="true" />
+        <boolean name="use_only_rsrp_for_lte_signal_bar_bool" value="true" />
+        <int-array name="lte_rsrp_thresholds_int_array" num="4">
+            <item value="-126" />
+            <item value="-112" />
+            <item value="-106" />
+            <item value="-95" />
+        </int-array>
+        <string name="wcdma_default_signal_strength_measurement_string">rscp</string>
+        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
+        <boolean name="call_barring_visibility_bool" value="true" />
+        <boolean name="moto_should_restore_unknown_participant_bool" value="true" />
+        <boolean name="moto_should_restore_anonymous_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="1575" name="3">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="use_only_rsrp_for_lte_signal_bar_bool" value="true" />
+        <boolean name="always_play_remote_hold_tone_bool" value="true" />
+        <int-array name="lte_rsrp_thresholds_int_array" num="4">
+            <item value="-126" />
+            <item value="-112" />
+            <item value="-106" />
+            <item value="-95" />
+        </int-array>
+        <string name="wcdma_default_signal_strength_measurement_string">rscp</string>
+        <int name="recipientLimit" value="200" />
+        <int name="smsToMmsTextThreshold" value="-1" />
+        <boolean name="editable_voicemail_number_bool" value="true" />
+        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
+        <boolean name="call_barring_visibility_bool" value="true" />
+        <boolean name="moto_should_restore_unknown_participant_bool" value="true" />
+        <boolean name="moto_should_restore_anonymous_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="1581" name="au">
+        <string-array name="carrier_additional_cbs_channels_strings" num="1">
+            <item value="0xA808:emergency=true,type=other" />
+        </string-array>
+    </carrier_config>
+    <carrier_config cid="1895" name="Freedom Mobile">
+        <int name="emc_turn_radio_retry_limit_int_sim" value="1" />
+        <boolean name="use_vowifi_call_after_call_fail_sim" value="true" />
+        <int name="emc_connection_limit_int_sim" value="10000" />
+        <boolean name="vvm_cellular_data_required_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="1644" name="KPN Netherlands">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <boolean name="hide_ims_apn_bool" value="true" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="1647" name="Claro PE">
+        <int name="maxMessageSize" value="1048576" />
+        <int name="smsToMmsTextThreshold" value="6" />
+        <int name="recipientLimit" value="20" />
+        <int name="maxSubjectLength" value="80" />
+        <boolean name="smsUsesSimpleCharactersOnly" value="true" />
+        <boolean name="hide_ims_apn_bool" value="true" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <boolean name="editable_wfc_mode_bool" value="false" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <string name="gps.supl_mode">0</string>
+        <string name="gps.supl_host">NONE</string>
+        <string name="gps.supl_ver">0x20000</string>
+        <string name="gps.lpp_profile">2</string>
+        <string name="gps.es_extension_sec">0</string>
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="is_ims_conference_size_enforced_bool" value="true" />
+        <int name="ims_conference_size_limit_int" value="9" />
+        <boolean name="ignore_data_enabled_changed_for_video_calls" value="true" />
+        <boolean name="vilte_data_is_metered_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="1653" name="Globe Telecom">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="1658" name="Plus">
+        <string name="default_vm_number_string">+48601222222</string>
+        <string-array name="carrier_metered_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <string-array name="carrier_metered_roaming_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_use_ims_first_for_emergency_bool" value="false" />
+        <boolean name="editable_voicemail_number_bool" value="true" />
+        <boolean name="smsUsesSimpleCharactersOnly" value="true" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="false" />
+        <int name="smsToMmsTextThreshold" value="6" />
+        <boolean name="auto_retry_failed_wifi_emergency_call" value="true" />
+        <boolean name="moto_redial_alternate_service_call_over_cs" value="true" />
+        <boolean name="moto_bypass_nr_available_check" value="true" />
+    </carrier_config>
+    <carrier_config cid="1659" name="Orange">
+        <int name="maxSubjectLength" value="80" />
+        <int name="smsToMmsTextThreshold" value="-1" />
+        <boolean name="smsUsesSimpleCharactersOnly" value="true" />
+        <boolean name="editable_voicemail_number_bool" value="true" />
+        <boolean name="editable_wfc_mode_bool" value="false" />
+        <string-array name="carrier_metered_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <string-array name="carrier_metered_roaming_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <boolean name="hide_ims_apn_bool" value="true" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="show_wfc_location_privacy_policy_bool" value="true" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="false" />
+        <boolean name="use_only_rsrp_for_lte_signal_bar_bool" value="true" />
+        <boolean name="moto_bypass_nr_available_check" value="true" />
+        <boolean name="auto_retry_failed_wifi_emergency_call" value="true" />
+    </carrier_config>
+    <carrier_config cid="1662" name="PLAY">
+        <int name="maxSubjectLength" value="80" />
+        <boolean name="smsUsesSimpleCharactersOnly" value="true" />
+        <int name="smsToMmsTextThreshold" value="6" />
+        <boolean name="enableMMSDeliveryReports" value="true" />
+        <string-array name="carrier_metered_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <string-array name="carrier_metered_roaming_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="hide_ims_apn_bool" value="true" />
+        <boolean name="call_barring_visibility_bool" value="true" />
+        <int name="wfc_spn_format_idx_int" value="1" />
+        <boolean name="ignore_data_enabled_changed_for_video_calls" value="true" />
+        <boolean name="vilte_data_is_metered_bool" value="false" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="false" />
+        <boolean name="auto_retry_failed_wifi_emergency_call" value="true" />
+    </carrier_config>
+    <carrier_config cid="1678" name="MTC">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <int name="maxMessageSize" value="512000" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <boolean name="supportMMSOverWifi" value="false" />
+        <int name="smsToMmsTextThreshold" value="4" />
+    </carrier_config>
+    <carrier_config cid="1683" name="STC">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="hide_ims_apn_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="enable_update_address_for_mo" value="false" />
+    </carrier_config>
+    <carrier_config cid="1684" name="Mobily">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="hide_ims_apn_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="1695" name="Telenor Sverige AB">
+        <string-array name="non_roaming_operator_string_array" num="2">
+            <item value="24004" />
+            <item value="24024" />
+        </string-array>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <int name="maxImageHeight" value="480" />
+        <int name="maxImageWidth" value="640" />
+        <boolean name="supportMMSOverWifi" value="false" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="1709" name="A1">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="1710" name="Telekom Slovenije">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_roaming_enabled_bool" value="true" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <boolean name="call_barring_visibility_bool" value="true" />
+        <int name="maxMessageSize" value="3145728" />
+    </carrier_config>
+    <carrier_config cid="1713" name="Orange">
+        <boolean name="moto_bypass_nr_available_check" value="true" />
+    </carrier_config>
+    <carrier_config cid="1746" name="Ukrainian Mobile Communication, UMC">
+        <boolean name="call_barring_visibility_bool" value="true" />
+        <boolean name="moto_bypass_nr_available_check" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="1788" name="Sprint">
+        <string name="wfc_emergency_address_carrier_app_string">com.google.android.wfcactivation/.WfcActivationActivity</string>
+    </carrier_config>
+    <carrier_config cid="1789" name="Carolina West Wireless">
+        <string name="gps.supl_mode">0</string>
+        <string name="gps.supl_host">NONE</string>
+        <string name="gps.supl_ver">0x20000</string>
+        <string name="gps.lpp_profile">7</string>
+        <string name="gps.es_extension_sec">300</string>
+    </carrier_config>
+    <carrier_config cid="1836" name="C Spire">
+        <string name="gps.supl_mode">0</string>
+        <string name="gps.supl_host">NONE</string>
+        <string name="gps.supl_ver">0x20000</string>
+        <string name="gps.lpp_profile">7</string>
+        <string name="gps.es_extension_sec">300</string>
+    </carrier_config>
+    <carrier_config cid="1839" name="Verizon-Wireless">
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="true" />
+        <int name="moto_max_location_waiting_time" value="120" />
+        <boolean name="moto_avoid_bad_wifi_connection_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="1850" name="PTCI">
+        <string name="gps.supl_mode">0</string>
+        <string name="gps.supl_host">NONE</string>
+        <string name="gps.supl_ver">0x20000</string>
+        <string name="gps.lpp_profile">7</string>
+        <string name="gps.es_extension_sec">300</string>
+    </carrier_config>
+    <carrier_config cid="1853" name="Virgin Mobile">
+        <string name="wfc_emergency_address_carrier_app_string">com.google.android.wfcactivation/.WfcActivationActivity</string>
+        <string name="gps.supl_mode">0</string>
+        <string name="gps.supl_host">NONE</string>
+        <string name="gps.supl_ver">0x20000</string>
+        <string name="gps.lpp_profile">7</string>
+        <string name="gps.es_extension_sec">300</string>
+    </carrier_config>
+    <carrier_config cid="1860" name="Nextel Communications Inc.">
+        <string name="gps.supl_mode">0</string>
+        <string name="gps.supl_host">NONE</string>
+        <string name="gps.supl_ver">0x20000</string>
+        <string name="gps.lpp_profile">7</string>
+        <string name="gps.es_extension_sec">300</string>
+    </carrier_config>
+    <carrier_config cid="1864" name="Claro UY">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="editable_wfc_mode_bool" value="false" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <boolean name="hide_ims_apn_bool" value="true" />
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="true" />
+        <boolean name="is_ims_conference_size_enforced_bool" value="true" />
+        <int name="ims_conference_size_limit_int" value="5" />
+    </carrier_config>
+    <carrier_config cid="1882" name="亞太電信 Asia Pacific Telecom">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="1888" name="Taiwan Mobile Telecom">
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="1893" name="nTelos">
+        <string name="gps.supl_mode">0</string>
+        <string name="gps.supl_host">NONE</string>
+        <string name="gps.supl_ver">0x20000</string>
+        <string name="gps.lpp_profile">7</string>
+        <string name="gps.es_extension_sec">300</string>
+    </carrier_config>
+    <carrier_config cid="1894" name="SoftBank">
+        <string-array name="carrier_additional_cbs_channels_strings" num="4">
+            <item value="0xA800:emergency=true,type=earthquake" />
+            <item value="0xAFEE:emergency=true,type=tsunami" />
+            <item value="0xAC00-0xAFED:emergency=true,type=other" />
+            <item value="0xA802,0xA804:emergency=true,type=etws_default" />
+        </string-array>
+    </carrier_config>
+    <carrier_config cid="1897" name="dtac ">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="1898" name="True Move">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="moto_should_restore_unknown_participant_bool" value="true" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="1912" name="AT&amp;T MX">
+        <int name="smsToMmsTextThreshold" value="5" />
+        <boolean name="moto_enable_ussd_alert" value="true" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="editable_enhanced_4g_lte_bool" value="true" />
+        <int name="maxMessageSize" value="599000" />
+        <string-array name="non_roaming_operator_string_array" num="4">
+            <item value="33403" />
+            <item value="334030" />
+            <item value="334050" />
+            <item value="334020" />
+        </string-array>
+        <boolean name="hide_ims_apn_bool" value="true" />
+        <boolean name="editable_voicemail_number_setting_bool" value="false" />
+        <boolean name="gsm_cdma_calls_can_be_hd_audio" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <string name="gps.supl_mode">1</string>
+        <string name="gps.supl_host">supl.attmex.mx</string>
+        <string name="gps.supl_ver">0x20000</string>
+        <string name="gps.lpp_profile">3</string>
+        <string name="gps.es_extension_sec">0</string>
+        <boolean name="hide_lte_plus_data_icon_bool" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="1913" name="Telcel">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <boolean name="editable_wfc_mode_bool" value="false" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="false" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="smsUsesSimpleCharactersOnly" value="true" />
+        <boolean name="hide_ims_apn_bool" value="true" />
+        <boolean name="shall_filt_ims_conference_dialing_paricipant_bool" value="true" />
+        <boolean name="editable_voicemail_number_setting_bool" value="false" />
+        <boolean name="display_hd_audio_property_bool" value="false" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <boolean name="supportMMSOverWifi" value="false" />
+        <boolean name="ignore_data_enabled_changed_for_video_calls" value="true" />
+        <boolean name="vilte_data_is_metered_bool" value="false" />
+        <boolean name="moto_hide_smsc_edit_option_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="1914" name="Movistar">
+        <boolean name="smsUsesSimpleCharactersOnly" value="true" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="gsm_cdma_calls_can_be_hd_audio" value="true" />
+        <boolean name="hide_lte_plus_data_icon_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <boolean name="hide_lte_plus_data_icon_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="1914" device="potter|griffin|harpia|lux|addison" name="Movistar">
+        <boolean name="hide_ims_apn_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="1915" name="AT&amp;T MX">
+        <int name="smsToMmsTextThreshold" value="5" />
+        <boolean name="moto_enable_ussd_alert" value="true" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="editable_enhanced_4g_lte_bool" value="true" />
+        <int name="maxMessageSize" value="599000" />
+        <string-array name="non_roaming_operator_string_array" num="4">
+            <item value="33403" />
+            <item value="334030" />
+            <item value="334090" />
+            <item value="334020" />
+        </string-array>
+        <boolean name="hide_ims_apn_bool" value="true" />
+        <boolean name="editable_voicemail_number_setting_bool" value="false" />
+        <boolean name="gsm_cdma_calls_can_be_hd_audio" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+        <boolean name="skip_cf_fail_to_disable_dialog_bool" value="false" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <string name="gps.supl_mode">1</string>
+        <string name="gps.supl_host">supl.attmex.mx</string>
+        <string name="gps.supl_ver">0x20000</string>
+        <string name="gps.lpp_profile">3</string>
+        <string name="gps.es_extension_sec">0</string>
+        <boolean name="hide_lte_plus_data_icon_bool" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="1929" name="Movistar">
+        <int name="maxMessageSize" value="614400" />
+        <int name="maxMessageTextSize" value="5355" />
+        <int name="recipientLimit" value="20" />
+        <int name="maxSubjectLength" value="80" />
+        <boolean name="smsUsesSimpleCharactersOnly" value="true" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="hide_ims_apn_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <string-array name="unloggable_numbers_string_array" num="1">
+            <item value="100" />
+        </string-array>
+        <boolean name="ignore_data_enabled_changed_for_video_calls" value="true" />
+        <boolean name="vilte_data_is_metered_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="1930" name="Entel">
+        <int name="maxMessageSize" value="614400" />
+        <int name="maxMessageTextSize" value="2240" />
+        <int name="recipientLimit" value="20" />
+        <int name="maxSubjectLength" value="80" />
+        <boolean name="smsUsesSimpleCharactersOnly" value="true" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="moto_should_restore_unknown_participant_bool" value="true" />
+        <boolean name="hide_ims_apn_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <string name="gps.supl_mode">0</string>
+        <string name="gps.supl_host">NONE</string>
+        <string name="gps.supl_ver">0x20000</string>
+        <string name="gps.lpp_profile">2</string>
+        <string name="gps.es_extension_sec">0</string>
+        <string name="gps.supl_es">0</string>
+        <string name="gps.use_emergency_pdn_for_emergency_supl">0</string>
+        <boolean name="ignore_data_enabled_changed_for_video_calls" value="true" />
+        <boolean name="vilte_data_is_metered_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="1949" name="MetroPCS">
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="true" />
+        <boolean name="show_iccid_in_sim_status_bool" value="true" />
+        <boolean name="support_video_conference_call_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="1949" haspackage="summit" name="MetroPCS">
+        <string name="config_ims_package_override_string">com.summit.motorola.rcs</string>
+    </carrier_config>
+    <carrier_config cid="1951" name="Boost Mobile">
+        <string name="wfc_emergency_address_carrier_app_string">com.google.android.wfcactivation/.WfcActivationActivity</string>
+        <string name="gps.supl_mode">0</string>
+        <string name="gps.supl_host">NONE</string>
+        <string name="gps.supl_ver">0x20000</string>
+        <string name="gps.lpp_profile">7</string>
+        <string name="gps.es_extension_sec">300</string>
+    </carrier_config>
+    <carrier_config cid="1952" name="U.S. Cellular">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <string name="carrier_eri_file_name_string">eri_usc.xml</string>
+        <int name="volte_replacement_rat_int" value="6" />
+        <boolean name="carrier_volte_provisioning_required_bool" value="true" />
+        <boolean name="config_device_wfc_ims_available" value="true" />
+        <boolean name="config_telephony_use_own_number_for_voicemail_bool" value="true" />
+        <boolean name="is_ims_conference_size_enforced_bool" value="true" />
+        <int name="ims_conference_size_limit_int" value="5" />
+        <string name="emailGatewayNumber" />
+        <boolean name="rtt_supported_bool" value="true" />
+        <boolean name="carrier_rtt_supported_on_vtcalls" value="false" />
+        <boolean name="carrier_rtt_auto_upgrade" value="false" />
+        <boolean name="carrier_rtt_upgrade_supported" value="true" />
+        <boolean name="carrier_rtt_downgrade_supported" value="false" />
+        <boolean name="carrier_rtt_supported_on_vtcalls" value="false" />
+        <string-array name="read_only_apn_fields_string_array" num="18">
+            <item value="proxy" />
+            <item value="port" />
+            <item value="user" />
+            <item value="password" />
+            <item value="server" />
+            <item value="mmsc" />
+            <item value="mmsproxy" />
+            <item value="mmsport" />
+            <item value="mcc" />
+            <item value="mnc" />
+            <item value="authtype" />
+            <item value="type" />
+            <item value="protocol" />
+            <item value="roaming_protocol" />
+            <item value="carrier_enabled" />
+            <item value="bearer" />
+            <item value="mvno_type" />
+            <item value="mvno_match_data" />
+        </string-array>
+        <string-array name="new_apn_default_value_fields_string_array" num="3">
+            <item value="apn:usccinternet" />
+            <item value="bearer:14" />
+            <item value="protocol:IPV4V6" />
+        </string-array>
+        <string-array name="new_apn_read_only_apn_fields_string_array" num="18">
+            <item value="proxy" />
+            <item value="port" />
+            <item value="user" />
+            <item value="password" />
+            <item value="server" />
+            <item value="mmsc" />
+            <item value="mmsproxy" />
+            <item value="mmsport" />
+            <item value="mcc" />
+            <item value="mnc" />
+            <item value="authtype" />
+            <item value="type" />
+            <item value="protocol" />
+            <item value="roaming_protocol" />
+            <item value="carrier_enabled" />
+            <item value="bearer" />
+            <item value="mvno_type" />
+            <item value="mvno_match_data" />
+        </string-array>
+        <boolean name="force_imei_bool" value="true" />
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="true" />
+        <boolean name="show_iccid_in_sim_status_bool" value="true" />
+        <string name="call_redirection_service_component_name_string">com.motorola.callredirectionservice/.usc.UscCallRedirectionService</string>
+        <boolean name="moto_show_5g_warning_on_volte_off_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="1955" name="Claro PR">
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="1958" name="Free">
+        <int name="smsToMmsTextThreshold" value="6" />
+        <string-array name="non_roaming_operator_string_array" num="3">
+            <item value="20801" />
+            <item value="20815" />
+            <item value="EMPTY_WHEN_VOICE_OOS" />
+        </string-array>
+        <boolean name="prefer_2g_bool" value="false" />
+        <boolean name="gsm_cdma_calls_can_be_hd_audio" value="true" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+    </carrier_config>
+    <carrier_config cid="1959" name="Digi.Mobil">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="hide_ims_apn_bool" value="true" />
+        <boolean name="moto_should_restore_unknown_participant_bool" value="true" />
+        <string-array name="moto_prefixs_for_restore_cep_string_array" num="2">
+            <item value="0" />
+            <item value="+40" />
+        </string-array>
+    </carrier_config>
+    <carrier_config cid="1970" name="du">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="1974" name="JAZZTEL">
+        <boolean name="smsUsesSimpleCharactersOnly" value="true" />
+    </carrier_config>
+    <carrier_config cid="1972" name="Zain Saudi Arabia">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <int name="maxImageHeight" value="480" />
+        <int name="maxImageWidth" value="640" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="1989" name="Google Fi">
+        <boolean name="hide_ims_apn_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <string name="carrier_name_string">Project Fi</string>
+    </carrier_config>
+    <carrier_config cid="1997" name="TrueMove H 4G LTE">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="moto_should_restore_unknown_participant_bool" value="true" />
+        <string-array name="moto_prefixs_for_restore_cep_string_array" num="2">
+            <item value="0" />
+            <item value="+66" />
+        </string-array>
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <boolean name="sim_lock_is_valid_sim_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="1999" name="VIVACOM">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_roaming_enabled_bool" value="true" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <boolean name="supportMMSOverWifi" value="false" />
+        <boolean name="hide_ims_apn_bool" value="true" />
+        <boolean name="moto_update_cb_with_password_over_ims" value="true" />
+    </carrier_config>
+    <carrier_config cid="2011" name="Inland Cellular">
+        <string name="gps.supl_mode">0</string>
+        <string name="gps.supl_host">NONE</string>
+        <string name="gps.supl_ver">0x20000</string>
+        <string name="gps.lpp_profile">7</string>
+        <string name="gps.es_extension_sec">300</string>
+    </carrier_config>
+    <carrier_config cid="2020" name="Koodo Mobile">
+        <boolean name="use_vowifi_call_after_call_fail_sim" value="true" />
+        <int name="emc_connection_limit_int_sim" value="10000" />
+    </carrier_config>
+    <carrier_config cid="2021" name="Virgin Mobile Canada">
+        <boolean name="use_vowifi_call_after_call_fail_sim" value="true" />
+        <int name="emc_connection_limit_int_sim" value="10000" />
+        <string name="moto_preferred_display_name">[PNN]</string>
+        <string name="carrier_name_string">Virgin</string>
+    </carrier_config>
+    <carrier_config cid="2022" name="Tracfone">
+        <boolean name="rtt_supported_bool" value="true" />
+        <int name="wfc_spn_format_idx_int" value="1" />
+        <int name="wfc_flight_mode_spn_format_idx_int" value="1" />
+    </carrier_config>
+    <carrier_config cid="2023" name="CC Network">
+        <string name="moto_preferred_display_name">[PNN]</string>
+        <string name="carrier_name_string">CC Network</string>
+    </carrier_config>
+    <carrier_config cid="2032" device="ocean" name="XFINITY Mobile">
+        <string name="vvm_type_string">vvm_type_disable</string>
+    </carrier_config>
+    <carrier_config cid="2032" name="XFINITY Mobile">
+        <boolean name="additional_settings_call_waiting_visibility_bool" value="false" />
+        <boolean name="additional_settings_caller_id_visibility_bool" value="false" />
+        <boolean name="call_forwarding_visibility_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="2053" name="PC Mobile">
+        <boolean name="use_vowifi_call_after_call_fail_sim" value="true" />
+        <int name="emc_connection_limit_int_sim" value="10000" />
+    </carrier_config>
+    <carrier_config cid="2055" name="Chatr">
+        <string-array name="read_only_apn_types_string_array" num="0" />
+        <boolean name="carrier_name_override_bool" value="false" />
+        <string name="carrier_name_string" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <boolean name="use_vowifi_call_after_call_fail_sim" value="true" />
+        <int name="emc_connection_limit_int_sim" value="10000" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="2056" name="Ztar Mobile">
+        <string-array name="read_only_apn_types_string_array" num="0" />
+        <boolean name="carrier_name_override_bool" value="false" />
+        <string name="carrier_name_string" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <boolean name="use_vowifi_call_after_call_fail_sim" value="true" />
+        <int name="emc_connection_limit_int_sim" value="10000" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="2057" name="Cityfone">
+        <string-array name="read_only_apn_types_string_array" num="0" />
+        <boolean name="carrier_name_override_bool" value="false" />
+        <string name="carrier_name_string" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <boolean name="use_vowifi_call_after_call_fail_sim" value="true" />
+        <int name="emc_connection_limit_int_sim" value="10000" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="false" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="2063" name="Family Mobile (Walmart)">
+        <int name="wfc_spn_format_idx_int" value="1" />
+        <int name="wfc_flight_mode_spn_format_idx_int" value="1" />
+    </carrier_config>
+    <carrier_config cid="2064" name="GoSmart">
+        <int name="wfc_spn_format_idx_int" value="1" />
+        <int name="wfc_flight_mode_spn_format_idx_int" value="1" />
+    </carrier_config>
+    <carrier_config cid="2078" name="Simple Mobile">
+        <int name="wfc_spn_format_idx_int" value="1" />
+        <int name="wfc_flight_mode_spn_format_idx_int" value="1" />
+    </carrier_config>
+    <carrier_config cid="2088" name="Crnogorski Telekom">
+        <boolean name="enable_omacp_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="2089" name="Public Mobile">
+        <boolean name="prefer_2g_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="2090" name="Tbaytel">
+        <string-array name="read_only_apn_types_string_array" num="0" />
+        <boolean name="carrier_name_override_bool" value="false" />
+        <string name="carrier_name_string" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <boolean name="use_vowifi_call_after_call_fail_sim" value="true" />
+        <int name="emc_connection_limit_int_sim" value="10000" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="2091" name="Bonbon">
+        <boolean name="enable_omacp_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="2092" name="Congstar">
+        <boolean name="enable_omacp_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="2093" name="Tesco">
+        <int name="maxSubjectLength" value="80" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="prefer_2g_bool" value="false" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
+        <boolean name="carrier_volte_provisioning_required_bool" value="true" />
+        <boolean name="carrier_volte_override_wfc_provisioning_bool" value="true" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+        <int name="smsToMmsTextThreshold" value="-1" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <boolean name="hide_ims_apn_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="2095" name="Ben">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <boolean name="enabledMMS" value="false" />
+        <boolean name="editable_voicemail_number_setting_bool" value="false" />
+        <boolean name="smsUsesSimpleCharactersOnly" value="true" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="hide_ims_apn_bool" value="true" />
+        <boolean name="editable_wfc_mode_bool" value="false" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
+        <boolean name="call_barring_visibility_bool" value="true" />
+        <string-array name="carrier_metered_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <string-array name="carrier_metered_roaming_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="false" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <boolean name="enable_omacp_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="2096" name="Heyah">
+        <boolean name="enable_omacp_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="2101" name="BT">
+        <boolean name="carrier_name_override_bool" value="true" />
+        <string name="carrier_name_string">BT</string>
+    </carrier_config>
+    <carrier_config cid="2102" name="BT Business">
+        <boolean name="carrier_name_override_bool" value="true" />
+        <string name="carrier_name_string">BT</string>
+    </carrier_config>
+    <carrier_config cid="2119" name="FirstNet">
+        <string-array name="new_apn_default_value_fields_string_array" num="1">
+            <item value="type:default,hipri" />
+        </string-array>
+        <string name="show_carrier_data_icon_pattern_string">FirstNet\.\.\.[12]$</string>
+        <string name="5g_icon_configuration_string">connected_mmwave:5G_Plus,connected:5G,not_restricted:5G,restricted:None</string>
+        <string name="gps.supl_mode">1</string>
+        <string name="gps.supl_host">NONE</string>
+        <string name="gps.supl_ver">0x20000</string>
+        <string name="gps.lpp_profile">11</string>
+        <string name="gps.es_extension_sec">0</string>
+    </carrier_config>
+    <carrier_config cid="2119" haspackage="summit" name="FirstNet">
+        <string name="config_ims_package_override_string">com.summit.motorola.rcs</string>
+    </carrier_config>
+    <carrier_config cid="2120" name="FirstNet (Lab)">
+        <string-array name="new_apn_default_value_fields_string_array" num="1">
+            <item value="type:default,hipri" />
+        </string-array>
+    </carrier_config>
+    <carrier_config cid="2120" haspackage="summit" name="FirstNet (Lab)">
+        <string name="config_ims_package_override_string">com.summit.motorola.rcs</string>
+    </carrier_config>
+    <carrier_config cid="2124" name="Iliad">
+        <int name="smsToMmsTextThreshold" value="6" />
+        <string-array name="non_roaming_operator_string_array" num="3">
+            <item value="20801" />
+            <item value="20815" />
+            <item value="EMPTY_WHEN_VOICE_OOS" />
+        </string-array>
+        <boolean name="prefer_2g_bool" value="false" />
+        <boolean name="gsm_cdma_calls_can_be_hd_audio" value="true" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+    </carrier_config>
+    <carrier_config cid="2127" name="Free RE">
+        <int name="smsToMmsTextThreshold" value="6" />
+        <string-array name="non_roaming_operator_string_array" num="3">
+            <item value="20801" />
+            <item value="20815" />
+            <item value="EMPTY_WHEN_VOICE_OOS" />
+        </string-array>
+        <boolean name="prefer_2g_bool" value="false" />
+        <boolean name="gsm_cdma_calls_can_be_hd_audio" value="true" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+    </carrier_config>
+    <carrier_config cid="2128" name="Sprint Wholesale">
+        <string name="wfc_emergency_address_carrier_app_string">com.google.android.wfcactivation/.WfcActivationActivity</string>
+    </carrier_config>
+    <carrier_config cid="2146" name="Visible">
+        <string name="moto_preferred_display_name">[PNN]</string>
+    </carrier_config>
+    <carrier_config cid="2147" name="Vodafone Lab">
+        <int name="maxSubjectLength" value="80" />
+        <int name="wfc_spn_format_idx_int" value="1" />
+        <boolean name="editable_wfc_mode_bool" value="false" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="enableSMSDeliveryReports" value="false" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <string-array name="carrier_metered_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <string-array name="carrier_metered_roaming_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <int name="smsToMmsTextThreshold" value="5" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="call_barring_visibility_bool" value="true" />
+        <boolean name="moto_bypass_nr_available_check" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="2150" name="Telenet">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+    </carrier_config>
+    <carrier_config cid="2160" name="Pine Belt">
+        <string name="gps.supl_mode">0</string>
+        <string name="gps.supl_host">NONE</string>
+        <string name="gps.supl_ver">0x20000</string>
+        <string name="gps.lpp_profile">7</string>
+        <string name="gps.es_extension_sec">300</string>
+    </carrier_config>
+    <carrier_config cid="2237" name="China Telecom">
+        <int name="volte_replacement_rat_int" value="6" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="ignore_data_enabled_changed_for_video_calls" value="true" />
+        <boolean name="vilte_data_is_metered_bool" value="false" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_ims_setting_reset_after_sim_swap_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="moto_convert_plus_for_ims_call_bool" value="false" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="2250" name="Nuestro AR">
+        <boolean name="enhanced_4g_lte_on_by_default_bool" value="false" />
+        <string-array name="non_roaming_operator_string_array" num="1">
+            <item value="72234" />
+        </string-array>
+    </carrier_config>
+    <carrier_config cid="2258" name="MobileNation">
+        <string name="gps.supl_mode">0</string>
+        <string name="gps.supl_host">NONE</string>
+        <string name="gps.supl_ver">0x20000</string>
+        <string name="gps.lpp_profile">7</string>
+        <string name="gps.es_extension_sec">300</string>
+    </carrier_config>
+    <carrier_config cid="2260" name="NexTech Ota">
+        <string name="gps.supl_mode">0</string>
+        <string name="gps.supl_host">NONE</string>
+        <string name="gps.supl_ver">0x20000</string>
+        <string name="gps.lpp_profile">7</string>
+        <string name="gps.es_extension_sec">300</string>
+    </carrier_config>
+    <carrier_config cid="2261" name="Blue Wireless">
+        <string name="gps.supl_mode">0</string>
+        <string name="gps.supl_host">NONE</string>
+        <string name="gps.supl_ver">0x20000</string>
+        <string name="gps.lpp_profile">7</string>
+        <string name="gps.es_extension_sec">300</string>
+    </carrier_config>
+    <carrier_config cid="2310" name="Debitel">
+        <boolean name="enable_omacp_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="2336" name="TrueMove H">
+        <boolean name="sim_lock_is_valid_sim_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="2363" name="Crnogorski Telekom">
+        <boolean name="enable_omacp_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="2365" name="Hrvaski Telekom">
+        <boolean name="enable_omacp_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="2366" name="Swisscom">
+        <boolean name="moto_bypass_nr_available_check" value="true" />
+    </carrier_config>
+    <carrier_config cid="2367" name="T-Mobile">
+        <boolean name="smsUsesSimpleCharactersOnly" value="true" />
+        <string name="default_vm_number_string">+48602950000</string>
+        <string-array name="carrier_metered_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <string-array name="carrier_metered_roaming_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
+        <boolean name="editable_wfc_mode_bool" value="true" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
+        <boolean name="editable_voicemail_number_bool" value="true" />
+        <int name="wfc_spn_format_idx_int" value="1" />
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="true" />
+        <boolean name="call_barring_visibility_bool" value="true" />
+        <boolean name="hide_ims_apn_bool" value="true" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="false" />
+        <boolean name="hide_lte_plus_data_icon_bool" value="true" />
+        <boolean name="auto_retry_failed_wifi_emergency_call" value="true" />
+        <boolean name="enable_omacp_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="2369" name="Orange">
+        <int name="maxSubjectLength" value="80" />
+        <int name="maxMessageSize" value="1048576" />
+        <string-array name="carrier_metered_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <string-array name="carrier_metered_roaming_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <boolean name="carrier_use_ims_first_for_emergency_bool" value="false" />
+        <boolean name="hide_ims_apn_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_roaming_enabled_bool" value="true" />
+        <boolean name="editable_voicemail_number_bool" value="true" />
+        <boolean name="editable_wfc_mode_bool" value="false" />
+        <int name="maxImageHeight" value="480" />
+        <int name="maxImageWidth" value="640" />
+        <boolean name="show_wfc_location_privacy_policy_bool" value="true" />
+        <boolean name="moto_bypass_nr_available_check" value="true" />
+    </carrier_config>
+    <carrier_config cid="2385" name="Slovak Telekom">
+        <boolean name="enable_omacp_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="2386" name="T-Mobile">
+        <int name="maxImageHeight" value="1944" />
+        <int name="maxImageWidth" value="2592" />
+        <int name="recipientLimit" value="20" />
+        <boolean name="enabledMMS" value="true" />
+        <boolean name="smsUsesSimpleCharactersOnly" value="true" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="hide_ims_apn_bool" value="true" />
+        <boolean name="carrier_default_wfc_ims_enabled_bool" value="false" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
+        <boolean name="editable_wfc_mode_bool" value="false" />
+        <boolean name="editable_voicemail_number_setting_bool" value="false" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true" />
+        <boolean name="hide_lte_plus_data_icon_bool" value="true" />
+        <boolean name="call_barring_visibility_bool" value="true" />
+        <string-array name="carrier_metered_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <string-array name="carrier_metered_roaming_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="true" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <boolean name="enable_omacp_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="2387" name="Vodafone">
+        <boolean name="moto_bypass_nr_available_check" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="2391" name="Vodafone">
+        <boolean name="moto_bypass_nr_available_check" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="2394" name="T-Mobile">
+        <boolean name="enable_omacp_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="2395" name="Telekom">
+        <boolean name="editable_wfc_mode_bool" value="false" />
+        <boolean name="editable_wfc_roaming_mode_bool" value="true" />
+        <string-array name="carrier_metered_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <string-array name="carrier_metered_roaming_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <boolean name="enable_omacp_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="2396" name="Mkedonski Telecom AD Skopje">
+        <boolean name="enable_omacp_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="2397" name="Vodafone">
+        <boolean name="moto_bypass_nr_available_check" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="2398" name="Vodafone">
+        <boolean name="moto_bypass_nr_available_check" value="true" />
+        <boolean name="smsUsesSimpleCharactersOnly" value="true" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="ignore_data_enabled_changed_for_video_calls" value="true" />
+        <boolean name="vilte_data_is_metered_bool" value="false" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="2399" name="Vodafone">
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <boolean name="editable_wfc_mode_bool" value="false" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <int name="smsToMmsTextThreshold" value="5" />
+        <string-array name="carrier_metered_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <string-array name="carrier_metered_roaming_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <boolean name="moto_bypass_nr_available_check" value="true" />
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <int name="wfc_spn_format_idx_int" value="11" />
+        <int name="wfc_flight_mode_spn_format_idx_int" value="11" />
+    </carrier_config>
+    <carrier_config cid="2401" name="Magyar Telekom">
+        <boolean name="enable_omacp_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="2425" name="iD Mobile">
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
+        <string-array name="carrier_metered_roaming_apn_types_strings" num="3">
+            <item value="default" />
+            <item value="dun" />
+            <item value="supl" />
+        </string-array>
+        <string name="carrier_name_string">iD Mobile</string>
+        <boolean name="carrier_name_override_bool" value="true" />
+        <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <boolean name="editable_wfc_mode_bool" value="false" />
+    </carrier_config>
+    <carrier_config cid="2433" name="Assurance Wireless">
+        <string name="wfc_emergency_address_carrier_app_string">com.google.android.wfcactivation/.WfcActivationActivity</string>
+    </carrier_config>
+    <carrier_config cid="10000" name="Tracfone-ATT">
+        <int name="wfc_spn_format_idx_int" value="1" />
+        <int name="wfc_flight_mode_spn_format_idx_int" value="1" />
+    </carrier_config>
+    <carrier_config cid="10001" name="Tracfone-TMO">
+        <int name="wfc_spn_format_idx_int" value="1" />
+        <int name="wfc_flight_mode_spn_format_idx_int" value="1" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <boolean name="carrier_name_override_bool" value="true" />
+        <string name="carrier_name_string">EMPTY</string>
+        <string-array name="moto_operator_name_replace_string_array" num="1">
+            <item value="ANY|EMPTY" />
+        </string-array>
+        <boolean name="moto_wfc_tmo_specific_req_bool" value="false" />
+        <boolean name="enable_omacp_ui_bool" value="false" />
+        <int-array name="omacp_auth_types_array" num="1">
+            <item value="0" />
+        </int-array>
+        <string-array name="carrier_metered_apn_types_strings" num="5">
+            <item value="cbs" />
+            <item value="default" />
+            <item value="dun" />
+            <item value="mms" />
+            <item value="supl" />
+        </string-array>
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="true" />
+        <boolean name="enable_omacp_bool" value="true" />
+    </carrier_config>
+    <carrier_config cid="10007" name="docomo_mvno">
+        <boolean name="allow_emergency_numbers_in_call_log_bool" value="true" />
+        <boolean name="always_show_emergency_alert_onoff_bool" value="true" />
+        <boolean name="carrier_force_disable_etws_cmas_test_bool" value="false" />
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="enabledMMS" value="false" />
+        <boolean name="hide_ims_apn_bool" value="true" />
+        <boolean name="hide_lte_plus_data_icon_bool" value="false" />
+        <boolean name="ignore_data_enabled_changed_for_video_calls" value="true" />
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true" />
+        <int name="volte_replacement_rat_int" value="3" />
+        <long name="message_expiration_time_long" value="3600000" />
+        <string-array name="ims_reasoninfo_mapping_string_array" num="1">
+            <item value="332||510" />
+        </string-array>
+        <boolean name="vilte_data_is_metered_bool" value="false" />
+        <boolean name="carrier_volte_tty_supported_bool" value="false" />
+        <string-array name="carrier_additional_cbs_channels_strings" num="1">
+            <item value="0xA001-0xA002,0xA004-0xA3FF:emergency=true,type=other" />
+        </string-array>
+    </carrier_config>
+    <carrier_config cid="10008" name="Tracfone-VZW">
+        <int name="moto_max_location_waiting_time" value="120" />
+        <boolean name="moto_vzw_voice_call_worldphone" value="false" />
+        <boolean name="enabledTransID" value="true" />
+        <int name="wfc_spn_format_idx_int" value="1" />
+        <int name="wfc_flight_mode_spn_format_idx_int" value="1" />
+        <string-array name="read_only_apn_fields_string_array" num="20">
+            <item value="name" />
+            <item value="proxy" />
+            <item value="port" />
+            <item value="user" />
+            <item value="password" />
+            <item value="server" />
+            <item value="mmsc" />
+            <item value="mmsproxy" />
+            <item value="mmsport" />
+            <item value="mcc" />
+            <item value="mnc" />
+            <item value="authtype" />
+            <item value="type" />
+            <item value="protocol" />
+            <item value="roaming_protocol" />
+            <item value="bearer" />
+            <item value="bearer_bitmask" />
+            <item value="carrier_enabled" />
+            <item value="mvno_type" />
+            <item value="mvno_match_data" />
+        </string-array>
+    </carrier_config>
+    <carrier_config cid="10013" name="FirstNet Pacific">
+        <string name="config_ims_package_override_string">com.google.android.ims</string>
+    </carrier_config>
+    <carrier_config gid1="deff" mcc="310" mnc="240" name="Tracfone-TMO">
+        <int name="wfc_spn_format_idx_int" value="1" />
+        <int name="wfc_flight_mode_spn_format_idx_int" value="1" />
+        <boolean name="carrier_vt_available_bool" value="false" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <boolean name="carrier_name_override_bool" value="true" />
+        <string name="carrier_name_string">EMPTY</string>
+        <string-array name="moto_operator_name_replace_string_array" num="1">
+            <item value="ANY|EMPTY" />
+        </string-array>
+        <boolean name="moto_wfc_tmo_specific_req_bool" value="false" />
+        <boolean name="enable_omacp_ui_bool" value="false" />
+        <int-array name="omacp_auth_types_array" num="1">
+            <item value="0" />
+        </int-array>
+        <string-array name="carrier_metered_apn_types_strings" num="5">
+            <item value="cbs" />
+            <item value="default" />
+            <item value="dun" />
+            <item value="mms" />
+            <item value="supl" />
+        </string-array>
+        <boolean name="carrier_default_data_roaming_enabled_bool" value="true" />
+        <boolean name="enable_omacp_bool" value="true" />
+    </carrier_config>
+    <carrier_config gid1="2ac9" mcc="310" mnc="280">
+        <string name="show_carrier_data_icon_pattern_string" />
+    </carrier_config>
+    <carrier_config gid1="4102" mcc="310" mnc="280">
+        <string name="show_carrier_data_icon_pattern_string" />
+    </carrier_config>
+    <carrier_config gid1="4201" mcc="310" mnc="280">
+        <string name="show_carrier_data_icon_pattern_string" />
+    </carrier_config>
+    <carrier_config gid1="44ff" mcc="310" mnc="280">
+        <string name="show_carrier_data_icon_pattern_string" />
+    </carrier_config>
+    <carrier_config gid1="49ff" mcc="310" mnc="280">
+        <string name="show_carrier_data_icon_pattern_string" />
+    </carrier_config>
+    <carrier_config gid1="62ff" mcc="310" mnc="280">
+        <string name="show_carrier_data_icon_pattern_string" />
+    </carrier_config>
+    <carrier_config gid1="69ff" mcc="310" mnc="280">
+        <string name="show_carrier_data_icon_pattern_string" />
+    </carrier_config>
+    <carrier_config gid1="ddff" mcc="310" mnc="280">
+        <string name="show_carrier_data_icon_pattern_string" />
+    </carrier_config>
+    <carrier_config gid1="deff" mcc="310" mnc="280">
+        <string name="show_carrier_data_icon_pattern_string" />
+    </carrier_config>
+    <carrier_config gid1="15ff" mcc="310" mnc="410">
+        <string name="show_carrier_data_icon_pattern_string" />
+    </carrier_config>
+</carrier_config_list>

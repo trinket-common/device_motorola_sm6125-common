@@ -1,0 +1,137 @@
+<!--
+ Copyright (C) 2019 Cirrus Logic, Inc.
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<audiohal>
+	<mixer card="0">
+		<init>
+			<!-- ensure scc path is not connected on initialization, when STHAL
+			     is restarted, the path maybe is still connected, setting will
+			     cause firmware crash -->
+			<ctl name="DSP1 Trigger Output Switch" val="0" />
+			<ctl name="DSP1 Preload Switch" val="1" />
+			<ctl name="DSP1X aox 13000d INITDISARMED" val="0,0,0,1" />
+
+			<!-- setup DSP clock -->
+			<ctl name="Sample Rate 2" val="16kHz" />
+			<ctl name="Sample Rate 3" val="96kHz" />
+			<ctl name="IN1L Rate" val="Sample Rate 3" />
+			<ctl name="ISRC1 FSL" val="Sample Rate 2" />
+			<ctl name="DSP1RX1 Rate" val="Sample Rate 2" />
+			<ctl name="DSP1RX2 Rate" val="Sample Rate 2" />
+			<ctl name="DSP1RX3 Rate" val="Sample Rate 2" />
+			<ctl name="DSP1RX4 Rate" val="Sample Rate 2" />
+			<ctl name="DSP1RX5 Rate" val="Sample Rate 2" />
+			<ctl name="DSP1RX6 Rate" val="Sample Rate 2" />
+			<ctl name="DSP1RX7 Rate" val="Sample Rate 2" />
+
+			<ctl name="DSP1RX8 Rate" val="Sample Rate 3" />
+			<ctl name="DSP1TX8 Rate" val="Sample Rate 3" />
+
+			<ctl name="DSP1RX1 Input 1" val="ISRC1DEC1" />
+			<ctl name="DSP1RX4 Input 1" val="ISRC1DEC1" />
+			<ctl name="DSP1RX5 Input 1" val="ISRC1DEC1" />
+			<ctl name="DSP1RX6 Input 1" val="ISRC1DEC1" />
+
+			<ctl name="RCV GLOBAL_EN from GPIO" val="0" />
+			<ctl name="RCV Boost Voltage mV" val="0" />
+			<ctl name="DSP1Y aox 13000d SCC_NUM_MICS" val="0,0,0,1" />
+			<ctl name="DSP1X aox 13000d AOU_TIMEOUT" val="0,0,10,00" />
+			<ctl name="DSP1X aox 13000d AOU_GPIO_PIN" val="0,0,0,11" />
+			<ctl name="DSP1Y aox 11d CONFIG_NB_PULSE" val="0,0,0,0" />
+			<ctl name="ASP2 Capture-RCV AMP Playback" val="Anonymous Configuration 0" />
+		</init>
+	</mixer>
+
+	<device name="global">
+		<path name="on">
+			<ctl name="DSP1 Trigger Output Switch" val="1" />
+		</path>
+
+		<path name="off">
+			<ctl name="DSP1 Trigger Output Switch" val="0" />
+		</path>
+	</device>
+
+	<device name="mic">
+		<path name="scc_enable">
+			<ctl name="IN1L Mux" val="Analog 1" />
+			<ctl name="ISRC1DEC1 Input 1" val="IN1L" />
+		</path>
+
+		<path name="scc_disable">
+			<ctl name="ISRC1DEC1 Input 1" val="None" />
+		</path>
+
+		<path name="aou_mic_enable">
+			<ctl name="DSP1RX8 Input 1" val="IN1L" />
+			<ctl name="DSP1X aox 13000d AOU_MIC_ENABLE" val="0,0,0,1" />
+			<ctl name="RCV AOU Enable Switch" val="1" />
+		</path>
+
+		<path name="aou_mic_disable">
+			<ctl name="RCV AOU Enable Switch" val="0" />
+			<ctl name="DSP1X aox 13000d AOU_MIC_ENABLE" val="0,0,0,0" />
+			<ctl name="DSP1RX8 Input 1" val="None" />
+		</path>
+	</device>
+
+	<device name="headset_in">
+		<path name="scc_enable">
+			<ctl name="IN1L Mux" val="Analog 2" />
+			<ctl name="ISRC1DEC1 Input 1" val="IN1L" />
+		</path>
+
+		<path name="scc_disable">
+			<ctl name="ISRC1DEC1 Input 1" val="None" />
+			<ctl name="IN1L Mux" val="Analog 1" />
+		</path>
+	</device>
+
+	<device name="speaker">
+		<path name="aou_amp_enable">
+			<ctl name="RCV GLOBAL_EN from GPIO" val="1" />
+			<ctl name="ASP2 Capture-RCV AMP Playback" val="Anonymous Configuration 1" />
+			<ctl name="DSP1X aox 13000d AOU_AMP_ENABLE" val="0,0,0,1" />
+			<ctl name="ASP2TX1 Input 2" val="DSP1.8" />
+		</path>
+
+		<path name="aou_amp_disable">
+			<ctl name="ASP2TX1 Input 2" val="None" />
+			<ctl name="DSP1X aox 13000d AOU_AMP_ENABLE" val="0,0,0,0" />
+			<ctl name="ASP2 Capture-RCV AMP Playback" val="Anonymous Configuration 0" />
+			<ctl name="RCV GLOBAL_EN from GPIO" val="0" />
+		</path>
+	</device>
+
+	<stream name="scc soundtrigger" type="compress" dir="in" card="0" device="39"
+		period_size="786" period_count="64" rate="16000">
+		<set name="format" val="2" />
+		<set name="codec_id" val="14" />
+		<set name="channels" val="1" />
+		<set name="poll_time" val="10" />
+		<enable path="scc_enable"/>
+		<disable path="scc_disable"/>
+	</stream>
+
+	<stream name="aou_mic" type="hw" dir="in">
+		<enable path="aou_mic_enable"/>
+		<disable path="aou_mic_disable"/>
+	</stream>
+	<stream name="aou_amp" type="hw" dir="out">
+		<enable path="aou_amp_enable"/>
+		<disable path="aou_amp_disable"/>
+	</stream>
+</audiohal>
