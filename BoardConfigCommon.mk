@@ -221,7 +221,7 @@ TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 TARGET_USERIMAGES_SPARSE_EXT_DISABLED := false
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2020-12-01
+VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
