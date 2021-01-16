@@ -192,8 +192,7 @@ BOARD_KERNEL_CMDLINE := \
 	swiotlb=1 \
 	loop.max_part=7 \
 	cgroup.memory=nokmem,nosocket \
-	printk.devkmsg=on \
-	firmware_class.path=/vendor/firmware_mnt/image
+	printk.devkmsg=on
 
 # Kernel Environment
 TARGET_NO_KERNEL := false
