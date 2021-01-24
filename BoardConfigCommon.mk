@@ -183,7 +183,7 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(COMMON_PATH)/framework_compatibi
 
 # Kernel cmdline
 BOARD_KERNEL_CMDLINE := \
-	console=ttyMSM0,115200,n8 \
+	console=ttyMSM0,115200n8 \
 	androidboot.hardware=qcom \
 	androidboot.console=ttyMSM0 \
 	androidboot.memcg=1 \
