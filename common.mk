@@ -94,22 +94,13 @@ PRODUCT_PACKAGES += \
     init.qti.fm.sh \
     init.qti.ims.sh \
     fstab.qcom \
-    init.hidl.sensor.rc \
     init.mmi.charge_only.rc \
     init.mmi.chipset.rc \
-    init.mmi.debug.rc \
-    init.mmi.diag.rc \
-    init.mmi.diag_mdlog.rc \
     init.mmi.overlay.rc \
     init.mmi.rc \
-    init.mmi.sensor.rc \
-    init.mmi.tcmd.rc \
     init.mmi.usb.rc \
-    init.mmi.wlan.rc \
-    init.msm.usb.configfs.rc \
-    init.qcom.factory.rc \
     init.qcom.rc \
-    init.qcom.usb.rc \
+    init.recovery.qcom.rc \
     init.target.rc \
     ueventd.qcom.rc
 
