@@ -1786,6 +1786,12 @@ vendor/radio/qcril_database/upgrade/7_version_qcrildb.sql
 vendor/radio/qcril_database/upgrade/8_version_qcrildb.sql
 vendor/radio/qcril_database/upgrade/9_version_qcrildb.sql
 
+# Radio - Telephony (qti-telephony-common)
+product/framework/qti-telephony-common.jar|96154b2576114dd566bbc99a2d9af612de8849df
+
+# Radio - IMS APK
+-product/priv-app/ims/ims.apk|dd3f4d2c372487fd9cfabb8d87484f7887216974
+
 # Radio-IMS
 etc/permissions/com.qualcomm.qti.imscmservice.xml
 -product/app/uceShimService/uceShimService.apk
@@ -1846,7 +1852,6 @@ product/lib64/vendor.qti.ims.rcsconfig@1.0.so
 product/lib64/vendor.qti.ims.rcsconfig@1.1.so
 product/lib64/vendor.qti.imsrtpservice@2.0.so
 product/lib64/vendor.qti.imsrtpservice@2.1.so
--product/priv-app/ims/ims.apk
 vendor/bin/imsdatadaemon
 vendor/bin/imsqmidaemon
 vendor/bin/imsrcsd
