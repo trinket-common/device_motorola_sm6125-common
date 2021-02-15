@@ -1,12 +1,6 @@
 # Charge only mode configuration
 import /vendor/etc/init/hw/init.mmi.charge_only.rc
 
-# Chipset-specific init settings
-service fingerprintd /system/bin/fingerprintd
-    class late_start
-    user system
-    group vendor_fingerp
-
 on post-fs
     # Change permission for fingerprint sensor
     chown system vendor_tcmd /sys/devices/soc/soc:fpc_fpc1020/nav
