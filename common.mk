@@ -67,6 +67,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     bootctl
 
+# CNE
+PRODUCT_PACKAGES += \
+    cneapiclient \
+    com.quicinc.cne \
+    services-ext
+    
 # Dynamic Retrofit
 ifeq ($(filter %_doha, $(TARGET_PRODUCT)),)
 $(call inherit-product, device/motorola/trinket-common/dynamic_common.mk)
@@ -93,7 +99,7 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_SYSTEM_SERVER_JARS += \
     moto-ims-ext \
     moto-telephony
-    
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.0:64 \

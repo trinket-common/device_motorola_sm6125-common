@@ -161,6 +161,12 @@ USE_DEVICE_SPECIFIC_CAMERA := true
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
+# Conectivity Neural Engine and Data Power Manager
+BOARD_USES_QCNE := true
+
+TARGET_LDPRELOAD := \
+	libNimsWrap.so
+
 # Display
 TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
 TARGET_USES_DISPLAY_RENDER_INTENTS := true
