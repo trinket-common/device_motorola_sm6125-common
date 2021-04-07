@@ -105,6 +105,7 @@ BOARD_USES_RECOVERY_AS_BOOT := true
 # Rules for Environmet
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_PHONY_TARGETS := true
+BOARD_VENDOR := motorola
 
 ##############################
 ##                          ##
