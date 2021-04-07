@@ -81,6 +81,19 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += qcom.fmradio
 
+# IMS
+PRODUCT_PACKAGES += \
+    ims-moto-libs
+
+PRODUCT_BOOT_JARS += \
+    ims-moto-libs \
+    moto-ims-ext \
+    moto-telephony
+
+PRODUCT_SYSTEM_SERVER_JARS += \
+    moto-ims-ext \
+    moto-telephony
+    
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.0:64 \
