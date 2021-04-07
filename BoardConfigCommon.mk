@@ -185,8 +185,9 @@ NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 TARGET_ENABLE_MEDIADRM_64 := true
 
 # Filesystem Config
-TARGET_FS_CONFIG_GEN += \
-    $(COMMON_PATH)/config.fs 
+TARGET_FS_CONFIG_GEN := \
+    $(COMMON_PATH)/config.fs \
+    $(COMMON_PATH)/mot_aids.fs
 
 # FM
 BOARD_HAVE_QCOM_FM := true
