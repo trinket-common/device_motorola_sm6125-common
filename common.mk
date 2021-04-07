@@ -56,6 +56,22 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
+# Boot Control
+PRODUCT_PACKAGES += \
+    android.hardware.boot@1.0-impl:64 \
+    android.hardware.boot@1.0-service \
+    android.hardware.boot@1.0-impl.recovery \
+    bootctrl.qcom \
+    bootctrl.qcom.recovery
+
+PRODUCT_PACKAGES_DEBUG += \
+    bootctl
+
+# Dynamic Retrofit
+ifeq ($(filter %_doha, $(TARGET_PRODUCT)),)
+$(call inherit-product, device/motorola/trinket-common/dynamic_common.mk)
+endif
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.0:64 \
@@ -105,6 +121,9 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd.qcom.rc
 
+# VNDK
+PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := strict
+PRODUCT_PRODUCT_VNDK_VERSION := current
 
 ##############################
 ##                          ##

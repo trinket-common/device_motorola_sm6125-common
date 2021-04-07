@@ -17,66 +17,52 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter doha,$(TARGET_DEVICE)),)
+ifneq ($(filter rav, sofia, sofiap, sofiar, doha,$(TARGET_DEVICE)),)
 
 	include $(call all-makefiles-under,$(LOCAL_PATH))
 	include $(CLEAR_VARS)
 
-$(shell mkdir -p $(TARGET_OUT_VENDOR)/firmware; \
-    ln -sf /dev/block/bootdevice/by-name/msadp \
-        $(TARGET_OUT_VENDOR)/firmware/msadp)
-
-#A/B builds require us to create the mount points at compile time.
-#Just creating it for all cases since it does not hurt.
-FIRMWARE_MOUNT_POINT := \
-	$(TARGET_OUT_VENDOR)/firmware_mnt
-
-BT_FIRMWARE_MOUNT_POINT := \
-	$(TARGET_OUT_VENDOR)/bt_firmware
-
-DSP_MOUNT_POINT := \
-	$(TARGET_OUT_VENDOR)/dsp
-
-FSG_MOUNT_POINT := \
-	$(TARGET_OUT_VENDOR)/fsg
-
-ALL_DEFAULT_INSTALLED_MODULES += \
-	$(FIRMWARE_MOUNT_POINT) \
-	$(BT_FIRMWARE_MOUNT_POINT) \
-	$(DSP_MOUNT_POINT) \
-	$(FSG_MOUNT_POINT)
-
-$(FIRMWARE_MOUNT_POINT):
+# A/B builds require us to create the mount points at compile time.
+# Just creating it for all cases since it does not hurt.
+FIRMWARE_MOUNT_POINT := $(TARGET_OUT_VENDOR)/firmware_mnt
+$(FIRMWARE_MOUNT_POINT): $(LOCAL_INSTALLED_MODULE)
 	@echo "Creating $(FIRMWARE_MOUNT_POINT)"
 	@mkdir -p $(TARGET_OUT_VENDOR)/firmware_mnt
 
-$(BT_FIRMWARE_MOUNT_POINT):
+BT_FIRMWARE_MOUNT_POINT := $(TARGET_OUT_VENDOR)/bt_firmware
+$(BT_FIRMWARE_MOUNT_POINT): $(LOCAL_INSTALLED_MODULE)
 	@echo "Creating $(BT_FIRMWARE_MOUNT_POINT)"
 	@mkdir -p $(TARGET_OUT_VENDOR)/bt_firmware
 
-$(DSP_MOUNT_POINT):
+DSP_MOUNT_POINT := $(TARGET_OUT_VENDOR)/dsp
+$(DSP_MOUNT_POINT): $(LOCAL_INSTALLED_MODULE)
 	@echo "Creating $(DSP_MOUNT_POINT)"
 	@mkdir -p $(TARGET_OUT_VENDOR)/dsp
 
-$(FSG_MOUNT_POINT):
+FSG_MOUNT_POINT := $(TARGET_OUT_VENDOR)/fsg
+$(FSG_MOUNT_POINT): $(LOCAL_INSTALLED_MODULE)
 	@echo "Creating $(FSG_MOUNT_POINT)"
 	@mkdir -p $(TARGET_OUT_VENDOR)/fsg
 
-DSP_SYMLINK := $(TARGET_OUT_VENDOR)/lib/dsp
-$(DSP_SYMLINK): $(LOCAL_INSTALLED_MODULE)
-	@echo "Creating DSP folder symlink: $@"
-	@rm -rf $@
-	$(hide) ln -sf /vendor/dsp $@
+SUPER_MODEM_MOUNT_POINT := $(TARGET_OUT_VENDOR)/super_modem
+$(SUPER_MODEM_MOUNT_POINT): $(LOCAL_INSTALLED_MODULE)
+	@echo "Creating $(SUPER_MODEM_MOUNT_POINT)"
+	@mkdir -p $(TARGET_OUT_VENDOR)/super_modem
 
-ALL_DEFAULT_INSTALLED_MODULES += $(DSP_SYMLINK)
+SUPER_FSG_MOUNT_POINT := $(TARGET_OUT_VENDOR)/super_fsg
+$(SUPER_FSG_MOUNT_POINT): $(LOCAL_INSTALLED_MODULE)
+	@echo "Creating $(SUPER_FSG_MOUNT_POINT)"
+	@mkdir -p $(TARGET_OUT_VENDOR)/super_fsg
+
+ALL_DEFAULT_INSTALLED_MODULES += $(FIRMWARE_MOUNT_POINT) $(BT_FIRMWARE_MOUNT_POINT) $(DSP_MOUNT_POINT) $(FSG_MOUNT_POINT) $(SUPER_MODEM_MOUNT_POINT) $(SUPER_FSG_MOUNT_POINT)
 
 IMS_LIBS := libimscamera_jni.so libimsmedia_jni.so
-IMS_SYMLINKS := $(addprefix $(TARGET_OUT_PRODUCT_APPS_PRIVILEGED)/ims/lib/arm64/,$(notdir $(IMS_LIBS)))
+IMS_SYMLINKS := $(addprefix $(TARGET_OUT_SYSTEM_EXT_APPS_PRIVILEGED)/ims/lib/arm64/,$(notdir $(IMS_LIBS)))
 $(IMS_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "IMS lib link: $@"
 	@mkdir -p $(dir $@)
 	@rm -rf $@
-	$(hide) ln -sf /system/product/lib64/$(notdir $@) $@
+	$(hide) ln -sf /system_ext/lib64/$(notdir $@) $@
 
 ALL_DEFAULT_INSTALLED_MODULES += $(IMS_SYMLINKS)
 
@@ -92,13 +78,13 @@ $(RFS_MSM_ADSP_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	$(hide) ln -sf /vendor/firmware_mnt $@/readonly/firmware
 	$(hide) ln -sf /vendor/firmware $@/readonly/vendor/firmware
 
-RFS_MSM_SLPI_SYMLINKS := $(TARGET_OUT_VENDOR)/rfs/msm/slpi/
-$(RFS_MSM_SLPI_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
-	@echo "Creating RFS MSM SLPI folder structure: $@"
+RFS_MSM_CDSP_SYMLINKS := $(TARGET_OUT_VENDOR)/rfs/msm/cdsp/
+$(RFS_MSM_CDSP_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+	@echo "Creating RFS MSM CDSP folder structure: $@"
 	@rm -rf $@/*
 	@mkdir -p $(dir $@)/readonly/vendor
-	$(hide) ln -sf /data/vendor/tombstones/rfs/slpi $@/ramdumps
-	$(hide) ln -sf /mnt/vendor/persist/rfs/msm/slpi $@/readwrite
+	$(hide) ln -sf /data/vendor/tombstones/rfs/cdsp $@/ramdumps
+	$(hide) ln -sf /mnt/vendor/persist/rfs/msm/cdsp $@/readwrite
 	$(hide) ln -sf /mnt/vendor/persist/rfs/shared $@/shared
 	$(hide) ln -sf /mnt/vendor/persist/hlos_rfs/shared $@/hlos
 	$(hide) ln -sf /vendor/firmware_mnt $@/readonly/firmware
@@ -116,22 +102,25 @@ $(RFS_MSM_MPSS_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	$(hide) ln -sf /vendor/firmware_mnt $@/readonly/firmware
 	$(hide) ln -sf /vendor/firmware $@/readonly/vendor/firmware
 
-ALL_DEFAULT_INSTALLED_MODULES += $(RFS_MSM_ADSP_SYMLINKS) $(RFS_MSM_MPSS_SYMLINKS) $(RFS_MSM_SLPI_SYMLINKS)
+RFS_MSM_SLPI_SYMLINKS := $(TARGET_OUT_VENDOR)/rfs/msm/slpi/
+$(RFS_MSM_SLPI_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+	@echo "Creating RFS MSM SLPI folder structure: $@"
+	@rm -rf $@/*
+	@mkdir -p $(dir $@)/readonly/vendor
+	$(hide) ln -sf /data/vendor/tombstones/rfs/slpi $@/ramdumps
+	$(hide) ln -sf /mnt/vendor/persist/rfs/msm/slpi $@/readwrite
+	$(hide) ln -sf /mnt/vendor/persist/rfs/shared $@/shared
+	$(hide) ln -sf /mnt/vendor/persist/hlos_rfs/shared $@/hlos
+	$(hide) ln -sf /vendor/firmware_mnt $@/readonly/firmware
+	$(hide) ln -sf /vendor/firmware $@/readonly/vendor/firmware
 
-WCNSS_MAC_SYMLINK := $(TARGET_OUT_VENDOR)/firmware/wlan/qca_cld/wlan_mac.bin
-$(WCNSS_MAC_SYMLINK): $(LOCAL_INSTALLED_MODULE)
-	@echo "WCNSS MAC bin link: $@"
-	@mkdir -p $(dir $@)
-	@rm -rf $@
-	$(hide) ln -sf /persist/$(notdir $@) $@
+WIFI_FIRMWARE_SYMLINKS := $(TARGET_OUT_VENDOR)/firmware/wlan/qca_cld
+$(WIFI_FIRMWARE_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+	@echo "Creating wifi firmware symlinks: $@"
+	mkdir -p $@
+	$(hide) ln -sf /vendor/etc/wifi/WCNSS_qcom_cfg.ini $@/WCNSS_qcom_cfg.ini
+	$(hide) ln -sf /mnt/vendor/persist/wlan_mac.bin $@/wlan_mac.bin
 
-ALL_DEFAULT_INSTALLED_MODULES += $(WCNSS_MAC_SYMLINK)
-
-EGL_SYMLINK := $(TARGET_OUT_VENDOR)/lib/libGLESv2_adreno.so
-$(EGL_SYMLINK): $(LOCAL_INSTALLED_MODULE)
-	@mkdir -p $(dir $@)
-	$(hide) ln -sf egl/$(notdir $@) $@
-
-ALL_DEFAULT_INSTALLED_MODULES += $(EGL_SYMLINK)
+ALL_DEFAULT_INSTALLED_MODULES += $(RFS_MSM_ADSP_SYMLINKS) $(RFS_MSM_CDSP_SYMLINKS) $(RFS_MSM_MPSS_SYMLINKS) $(RFS_MSM_SLPI_SYMLINKS) $(WIFI_FIRMWARE_SYMLINKS)
 
 endif
