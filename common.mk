@@ -72,7 +72,11 @@ PRODUCT_PACKAGES += \
     cneapiclient \
     com.quicinc.cne \
     services-ext
-    
+
+# For config.fs
+PRODUCT_PACKAGES += \
+    fs_config_files
+     
 # Dynamic Retrofit
 ifeq ($(filter %_doha, $(TARGET_PRODUCT)),)
 $(call inherit-product, device/motorola/trinket-common/dynamic_common.mk)
