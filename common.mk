@@ -81,6 +81,19 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += qcom.fmradio
 
+# IMS
+PRODUCT_PACKAGES += \
+    ims-moto-libs
+
+PRODUCT_BOOT_JARS += \
+    ims-moto-libs \
+    moto-ims-ext \
+    moto-telephony
+
+PRODUCT_SYSTEM_SERVER_JARS += \
+    moto-ims-ext \
+    moto-telephony
+    
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.0:64 \
@@ -129,6 +142,28 @@ PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
     init.target.rc \
     ueventd.qcom.rc
+
+# RIL
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.2 \
+    android.hardware.radio.config@1.0 \
+    android.hardware.secure_element@1.0 \
+    libprotobuf-cpp-full \
+    librmnetctl \
+    libxml2
+
+# Telephony
+PRODUCT_PACKAGES += \
+    ims-ext-common \
+    ims_ext_common.xml \
+    qti-telephony-hidl-wrapper \
+    qti_telephony_hidl_wrapper.xml \
+    qti-telephony-utils \
+    qti_telephony_utils.xml \
+    telephony-ext
+
+PRODUCT_BOOT_JARS += \
+    telephony-ext
 
 # VNDK
 PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := strict
