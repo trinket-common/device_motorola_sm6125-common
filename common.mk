@@ -28,7 +28,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 # Inherit vendor
-$(call inherit-product, vendor/motorola/trinket-common/trinket-common-vendor.mk)
+$(call inherit-product-if-exists, vendor/motorola/sm6125-common/sm6125-common-vendor.mk)
 
 # A/B updater
 AB_OTA_UPDATER := true
