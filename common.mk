@@ -72,6 +72,15 @@ ifeq ($(filter %_doha, $(TARGET_PRODUCT)),)
 $(call inherit-product, device/motorola/trinket-common/dynamic_common.mk)
 endif
 
+# FM
+PRODUCT_PACKAGES += \
+    FM2 \
+    libqcomfm_jni \
+    init.qti.fm.sh \
+    qcom.fmradio
+
+PRODUCT_BOOT_JARS += qcom.fmradio
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.0:64 \
