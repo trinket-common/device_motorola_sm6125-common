@@ -15,6 +15,16 @@
 # limitations under the License.
 #
 
+# Common tree
+COMMON_PATH := device/motorola/trinket-common
+BOARD_VENDOR := motorola
+
+# Rules for Environmet
+BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_PHONY_TARGETS := true
+
+TARGET_SPECIFIC_HEADER_PATH := $(COMMON_PATH)/include
+
 ###############################
 ##                           ##
 ##        Environment        ##
@@ -102,20 +112,11 @@ TARGET_USES_QCOM_BSP := true
 TARGET_NO_RECOVERY := true
 BOARD_USES_RECOVERY_AS_BOOT := true
 
-# Rules for Environmet
-BUILD_BROKEN_DUP_RULES := true
-BUILD_BROKEN_PHONY_TARGETS := true
-BOARD_VENDOR := motorola
-
 ##############################
 ##                          ##
 ##          Common          ##
 ##                          ##
 ##############################
-
-# Common tree
-COMMON_PATH := device/motorola/trinket-common
-BOARD_VENDOR := motorola
 
 # Audio
 AUDIO_FEATURE_ENABLED_AAC_ADTS_OFFLOAD := true
@@ -245,7 +246,6 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 TARGET_USES_MKE2FS := true
 
-TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 TARGET_USERIMAGES_SPARSE_EXT_DISABLED := false
 
 # Recovery
