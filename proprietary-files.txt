@@ -1444,47 +1444,6 @@ vendor/lib64/libmotext_inf.so
 vendor/lib64/motorola.hardware.vibrator@1.0.so
 vendor/lib64/motorola.hardware.wifi.supplicant@1.0_vendor.so
 
-# NFC
-product/etc/permissions/com.nxp.nfc.xml
--product/framework/com.nxp.nfc.jar
-vendor/bin/hw/android.hardware.nfc@1.2-service
-vendor/bin/nqnfcinfo
-vendor/etc/init/android.hardware.nfc@1.2-service.rc
-vendor/etc/libnfc-mtp-NQ3XX.conf
-vendor/etc/libnfc-mtp-NQ4XX.conf
-vendor/etc/libnfc-mtp-SN100.conf
-vendor/etc/libnfc-mtp_default.conf
-vendor/etc/libnfc-mtp_rf1.conf
-vendor/etc/libnfc-mtp_rf2.conf
-vendor/etc/libnfc-nci.conf
-vendor/etc/libnfc-nxp.conf
-vendor/etc/libnfc-qrd-NQ3XX.conf
-vendor/etc/libnfc-qrd-NQ4XX.conf
-vendor/etc/libnfc-qrd-SN100.conf
-vendor/etc/libnfc-qrd_default.conf
-vendor/etc/libnfc-qrd_rf1.conf
-vendor/etc/libnfc-qrd_rf2.conf
-vendor/etc/sysconfig/unavail.android.hardware.nfc.hce.xml
-vendor/etc/sysconfig/unavail.android.hardware.nfc.hcef.xml
-vendor/etc/sysconfig/unavail.android.hardware.nfc.uicc.xml
-vendor/etc/sysconfig/unavail.android.hardware.nfc.xml
-vendor/lib/ese_spi_nxp.so
-vendor/lib/hal_libnfc.so
-vendor/lib/libpn551_fw.so
-vendor/lib/libpn553_fw.so
-vendor/lib/libpn557_fw.so
-vendor/lib/nfc_nci_nxp.so
-vendor/lib/vendor.nxp.eventprocessor@1.0.so
-vendor/lib/vendor.nxp.nxpese@1.0.so
-vendor/lib/vendor.nxp.nxpnfc@1.0.so
-vendor/lib64/ese_spi_nxp.so
-vendor/lib64/hal_libnfc.so
-vendor/lib64/libpn553_fw.so
-vendor/lib64/nfc_nci_nxp.so
-vendor/lib64/vendor.nxp.eventprocessor@1.0.so
-vendor/lib64/vendor.nxp.nxpese@1.0.so
-vendor/lib64/vendor.nxp.nxpnfc@1.0.so
-
 # Neural-networks
 vendor/bin/hw/android.hardware.neuralnetworks@1.2-service-qti
 vendor/etc/init/android.hardware.neuralnetworks@1.2-service-qti.rc

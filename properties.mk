@@ -160,11 +160,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.netflix.bsp_rev=Q6125-17995-1
 
-# NFC
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.hardware.nfc_nci=pn54x \
-    ro.nfc.port=I2C
-
 # OEM Unlock Support
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.oem_unlock_supported=1
