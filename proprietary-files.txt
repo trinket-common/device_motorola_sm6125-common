@@ -2,7 +2,6 @@
 
 # ADSP
 vendor/bin/adsprpcd
-vendor/etc/init/vendor.qti.adsprpc-service.rc
 vendor/lib/libadsp_default_listener.so
 vendor/lib/libadspd.so
 vendor/lib/libadsprpc.so
@@ -66,13 +65,12 @@ vendor/lib/libadm.so
 vendor/lib/libaudcal.so
 vendor/lib/libaudioalsa.so
 vendor/lib/libaudioconfigstore.so
-vendor/lib/libaudiohalcm.so
 vendor/lib/libaudioparsers.so
 vendor/lib/libdrc.so
 vendor/lib/libqtigef.so
 vendor/lib/libsurround_3mic_proc.so
 vendor/lib64/libtinycompress.so
-vendor/lib64/libtinycompress_vendor.so
+vendor/lib/libtinycompress_vendor.so
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libaudiopreprocessing.so
 vendor/lib/soundfx/libqcbassboost.so
@@ -85,7 +83,6 @@ vendor/lib64/libadiertac.so
 vendor/lib64/libaudcal.so
 vendor/lib64/libaudioalsa.so
 vendor/lib64/libaudioconfigstore.so
-vendor/lib64/libaudiohalcm.so
 vendor/lib64/libaudioparsers.so
 vendor/lib64/libqtigef.so
 vendor/lib64/libtinycompress.so
@@ -115,7 +112,7 @@ vendor/lib64/soundfx/libqcomvisualizer.so
 vendor/lib64/soundfx/libqcomvoiceprocessing.so
 
 # Bluetooth
-product/framework/vendor.qti.hardware.bluetooth_dun-V1.0-java.jar
+-product/framework/vendor.qti.hardware.bluetooth_dun-V1.0-java.jar
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
@@ -880,7 +877,6 @@ vendor/lib64/liblistensoundmodel2.so
 vendor/bin/hw/android.hardware.neuralnetworks@1.2-service-qti
 vendor/etc/init/android.hardware.neuralnetworks@1.2-service-qti.rc
 vendor/lib64/libhexagon_nn_stub.so
-vendor/lib64/libhta_hexagon_runtime.so
 
 # OEM
 vendor/bin/expat
@@ -1020,8 +1016,6 @@ vendor/etc/init/netmgrd.rc
 vendor/etc/init/port-bridge.rc
 vendor/etc/init/qcrild.rc
 vendor/etc/init/vendor.mmi.carrier.rc
-vendor/etc/init/vendor.qti.rmt_storage.rc
-vendor/etc/init/vendor.qti.tftp.rc
 vendor/lib/lib-rtpcommon.so
 vendor/lib/lib-rtpcore.so
 vendor/lib/lib-rtpsl.so
