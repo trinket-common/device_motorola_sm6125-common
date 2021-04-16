@@ -18,22 +18,22 @@ BUILD_BROKEN_DUP_RULES := true
 
 BOARD_VENDOR := motorola
 
-VENDOR_PATH := device/motorola/sm7250-common
+VENDOR_PATH := device/motorola/sm6125-common
 
 # Architecture
 TARGET_ARCH := arm64
-TARGET_ARCH_VARIANT := armv8-2a
+TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_ABI2 :=
 TARGET_CPU_VARIANT := generic
-TARGET_CPU_VARIANT_RUNTIME := kryo300
+TARGET_CPU_VARIANT_RUNTIME := kryo260
 
 TARGET_2ND_ARCH := arm
-TARGET_2ND_ARCH_VARIANT := armv8-a
+TARGET_2ND_ARCH_VARIANT := armv7-a-neon
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
-TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a76
+TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a73
 
 TARGET_USES_64_BIT_BINDER := true
 
@@ -41,21 +41,35 @@ ENABLE_CPUSETS := true
 ENABLE_SCHEDBOOST := true
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := lito
+TARGET_BOOTLOADER_BOARD_NAME := trinket
 TARGET_NO_BOOTLOADER := true
 TARGET_USES_UEFI := true
 
 # Kernel
 BOARD_BOOT_HEADER_VERSION := 2
 BOARD_KERNEL_BASE := 0x00000000
-BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 androidboot.usbcontroller=a600000.dwc3 swiotlb=2048 loop.max_part=7 cgroup.memory=nokmem,nosocket reboot=panic_warm
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_SOURCE := kernel/motorola/sm7250
+TARGET_KERNEL_SOURCE := kernel/motorola/sm6125
 TARGET_KERNEL_CLANG_COMPILE := true
+
+# Kernel cmdline
+BOARD_KERNEL_CMDLINE := \
+    androidboot.hardware=qcom \
+    androidboot.console=ttyMSM0 \
+    androidboot.memcg=1 \
+    lpm_levels.sleep_disabled=1 \
+    video=vfb:640x400,bpp=32,memsize=3072000 \
+    msm_rtb.filter=0x237 \
+    service_locator.enable=1 \
+    androidboot.usbcontroller=a600000.dwc3 \
+    swiotlb=2048 \
+    loop.max_part=7 \
+    cgroup.memory=nokmem,nosocket \
+    reboot=panic_warm
 
 # Kernel modules - Audio
 TARGET_MODULE_ALIASES += \
@@ -63,7 +77,7 @@ TARGET_MODULE_ALIASES += \
     apr_dlkm.ko:audio_apr.ko \
     bolero_cdc_dlkm.ko:audio_bolero_cdc.ko \
     hdmi_dlkm.ko:audio_hdmi.ko \
-    machine_dlkm.ko:audio_machine_lito.ko \
+    machine_dlkm.ko:audio_machine_trinket.ko \
     mbhc_dlkm.ko:audio_mbhc.ko \
     native_dlkm.ko:audio_native.ko \
     pinctrl_lpi_dlkm.ko:audio_pinctrl_lpi.ko \
@@ -95,9 +109,9 @@ TARGET_MODULE_ALIASES += \
 
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
-QCOM_BOARD_PLATFORMS += lito
-TARGET_BOARD_PLATFORM := lito
-TARGET_BOARD_PLATFORM_GPU := qcom-adreno620
+QCOM_BOARD_PLATFORMS += trinket
+TARGET_BOARD_PLATFORM := trinket
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno610
 TARGET_USES_QCOM_BSP := true
 
 # APEX
@@ -170,8 +184,8 @@ DEVICE_MATRIX_FILE := $(VENDOR_PATH)/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE := $(VENDOR_PATH)/manifest.xml
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(VENDOR_PATH):libinit_lito
-TARGET_RECOVERY_DEVICE_MODULES := libinit_lito
+TARGET_INIT_VENDOR_LIB := //$(VENDOR_PATH):libinit_trinket
+TARGET_RECOVERY_DEVICE_MODULES := libinit_trinket
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true

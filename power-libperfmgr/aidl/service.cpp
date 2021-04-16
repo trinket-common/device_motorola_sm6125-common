@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "android.hardware.power-service.sm7250-libperfmgr"
+#define LOG_TAG "android.hardware.power-service.motorola_trinket-libperfmgr"
 
 #include <thread>
 

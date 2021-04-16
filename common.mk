@@ -21,7 +21,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/motorola/sm7250-common/sm7250-common-vendor.mk)
+$(call inherit-product-if-exists, vendor/motorola/sm6125-common/sm6125-common-vendor.mk)
 
 # Additional native libraries
 PRODUCT_COPY_FILES += \
@@ -237,7 +237,7 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
-    gralloc.lito \
+    gralloc.trinket \
     libdisplayconfig \
     libdisplayconfig.qti \
     libdisplayconfig.vendor \
@@ -245,7 +245,7 @@ PRODUCT_PACKAGES += \
     libqdMetaData.system \
     libtinyxml \
     libvulkan \
-    memtrack.lito \
+    memtrack.trinket \
     vendor.display.config@1.15.vendor \
     vendor.qti.hardware.display.allocator-service \
     vendor.qti.hardware.display.composer-service \
@@ -339,7 +339,7 @@ PRODUCT_PACKAGES += \
 # LiveDisplay
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.0-service-sdm \
-    vendor.lineage.livedisplay@2.0-service-sysfs.motorola_lito
+    vendor.lineage.livedisplay@2.0-service-sysfs.motorola_trinket
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -413,7 +413,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.sm7250-libperfmgr
+    android.hardware.power-service.motorola_trinket-libperfmgr
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/power-libperfmgr/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json

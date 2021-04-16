@@ -38,12 +38,16 @@ static inline const char* BtmGetDefaultName()
     char product_device[92];
     property_get("ro.product.device", product_device, "");
 
-    if (strstr(product_device, "nairo"))
-        return "Moto G 5G Plus";
-    if (strstr(product_device, "racer"))
-        return "Motorola Edge";
-    if (strstr(product_device, "smith"))
-        return "Motorola Razr 2";
+    if (strstr(product_device, "rav"))
+        return "Moto G Fast";
+    if (strstr(product_device, "sofia"))
+        return "Moto G Power";
+    if (strstr(product_device, "sofiap"))
+        return "Moto G8 Power";
+    if (strstr(product_device, "sofiar"))
+        return "Moto G Stylus ";
+    if (strstr(product_device, "doha"))
+        return "Moto G8 Plus";
 
     // Fallback to Moto Generic
     return "Motorola";
