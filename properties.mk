@@ -1,5 +1,5 @@
 #
-# Properties for sm7250
+# Properties for sm6125
 #
 
 # Audio
@@ -91,10 +91,12 @@ PRODUCT_ODM_PROPERTIES += \
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.qcom.bluetooth.enable.splita2dp=true \
+    persist.vendor.qcom.bluetooth.twsp_state.enabled=false \
     persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac \
+    persist.vendor.qcom.bluetooth.enable.splita2dp=true \
     persist.vendor.qcom.bluetooth.soc=cherokee \
     ro.bluetooth.a2dp_offload.supported=true \
+    ro.vendor.bluetooth.wipower=false \
     vendor.qcom.bluetooth.soc=cherokee
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
@@ -115,6 +117,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
 # Crypto
 PRODUCT_PROPERTY_OVERRIDES += \
+    ro.crypto.allow_encrypt_override=true \
     ro.crypto.dm_default_key.options_format.version=2 \
     ro.crypto.volume.filenames_mode=aes-256-cts \
     ro.crypto.volume.metadata.method=dm-default-key \
@@ -122,26 +125,41 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.dex2oat-threads=6 \
     dalvik.vm.dex2oat64.enabled=true \
+    dalvik.vm.heapgrowthlimit=192m \
     dalvik.vm.heapmaxfree=8m \
     dalvik.vm.heapminfree=512k \
-    dalvik.vm.heapsize=512m \
+    dalvik.vm.heapsize=384m \
     dalvik.vm.heapstartsize=8m \
     dalvik.vm.heaptargetutilization=0.75
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.hardware.vulkan=adreno \
     ro.hardware.egl=adreno \
-    vendor.display.disable_scaler=0 \
+    ro.hardware.vulkan=adreno \
+    vendor.display.comp_mask=0 \
+    vendor.display.dataspace_saturation_matrix=1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0 \
+    vendor.display.disable_decimation=1 \
     vendor.display.disable_excl_rect=0 \
     vendor.display.disable_excl_rect_partial_fb=1 \
-    vendor.display.comp_mask=0 \
-    vendor.display.enable_posted_start_dyn=1 \
-    vendor.display.enable_optimize_refresh=1 \
-    vendor.display.use_smooth_motion=1 \
+    vendor.display.disable_hw_recovery_dump=1 \
+    vendor.display.disable_mask_layer_hint=1 \
     vendor.display.disable_offline_rotator=1 \
-    vendor.display.disable_hw_recovery_dump=1
+    vendor.display.disable_scaler=0 \
+    vendor.display.disable_ui_3d_tonemap=1 \
+    vendor.display.enable_null_display=0 \
+    vendor.display.enable_optimize_refresh=1 \
+    vendor.display.enable_posted_start_dyn=1 \
+    vendor.display.hwc_disable_hdr=1 \
+    vendor.display.use_smooth_motion=1
+
+# Dolby Audio System
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.stagefright.omx_default_rank.sw-audio=1 \
+    persist.vendor.audio_fx.current=dolby \
+    vendor.audio.dolby.ds2.enabled=true \
+    vendor.audio.dolby.ds2.hardbypass=true \
 
 # DPM
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -167,15 +185,15 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.egl.hw=0 \
     debug.mdpcomp.logs=0 \
+    debug.sf.enable_gl_backpressure=1 \
     debug.sf.hw=0 \
     debug.sf.latch_unsignaled=1 \
     persist.demo.hdmirotationlock=false \
     persist.sys.sf.color_saturation=1.0 \
-    persist.sys.sf.native_mode=1 \
     persist.sys.sf.force_brightness_capability=1 \
-    debug.sf.enable_gl_backpressure=1 \
+    persist.sys.sf.native_mode=1 \
+    ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.trinket.api30 \
     ro.opengles.version=196610 \
-    ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.lito.api30 \
     vendor.display.enable_default_color_mode=1 \
     vendor.gralloc.disable_ubwc=0
 
@@ -221,7 +239,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
 # Netflix
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.netflix.bsp_rev=Q7250-19133-1
+    ro.netflix.bsp_rev=Q6125-17995-1
 
 # NFC
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
@@ -294,7 +312,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # SurfaceFlinger
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.has_wide_color_display=true \
-    ro.surface_flinger.has_HDR_display=true \
     ro.surface_flinger.use_color_management=true \
     ro.surface_flinger.wcg_composition_dataspace=143261696 \
     ro.surface_flinger.protected_contents=true
