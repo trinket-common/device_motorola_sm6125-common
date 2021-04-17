@@ -8,3 +8,4 @@ libOpenCL.so
 libnpu.so
 libhta_hexagon_runtime.so
 libadspd.so
+libfastcvopt.so
