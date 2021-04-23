@@ -58,6 +58,7 @@ TARGET_KERNEL_CLANG_COMPILE := true
 
 # Kernel cmdline
 BOARD_KERNEL_CMDLINE := \
+    console=ttyMSM0,115200n8 \
     androidboot.hardware=qcom \
     androidboot.console=ttyMSM0 \
     androidboot.memcg=1 \
@@ -65,11 +66,17 @@ BOARD_KERNEL_CMDLINE := \
     video=vfb:640x400,bpp=32,memsize=3072000 \
     msm_rtb.filter=0x237 \
     service_locator.enable=1 \
-    androidboot.usbcontroller=a600000.dwc3 \
-    swiotlb=2048 \
+    androidboot.usbcontroller=4e00000.dwc3 \
+    earlycon=msm_geni_serial,0x4a90000 \
+    androidboot.hab.csv=8 \
+    androidboot.hab.cid=50 \
+    swiotlb=1 \
     loop.max_part=7 \
     cgroup.memory=nokmem,nosocket \
-    reboot=panic_warm
+    reboot=panic_warm \
+    printk.devkmsg=on
+
+BOARD_KERNEL_CMDLINE := androidboot.selinux=permissive
 
 # Kernel modules - Audio
 TARGET_MODULE_ALIASES += \
