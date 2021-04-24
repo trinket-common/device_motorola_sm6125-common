@@ -623,7 +623,6 @@ vendor/lib/libnlnetmgr.so
 vendor/lib/qtibus.so
 vendor/lib/qtimutex.so
 vendor/lib/qcrild_librilutils.so
-vendor/lib64/deviceInfoServiceModule.so
 vendor/lib64/libconfigdb.so
 vendor/lib64/libdsi_netctrl.so
 vendor/lib64/liblog_vendor.so
