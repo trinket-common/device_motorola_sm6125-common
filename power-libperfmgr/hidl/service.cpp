@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "android.hardware.power@1.3-service.sm6150-libperfmgr"
+#define LOG_TAG "android.hardware.power@1.3-service.sm6125-libperfmgr"
 
 #include <android/log.h>
 #include <hidl/HidlTransportSupport.h>
@@ -34,7 +34,7 @@ using android::hardware::power::V1_3::IPower;
 using android::hardware::power::V1_3::implementation::Power;
 
 int main(int /* argc */, char ** /* argv */) {
-    ALOGI("Power HAL Service 1.3 for sm6150 is starting.");
+    ALOGI("Power HAL Service 1.3 for sm6125 is starting.");
 
     android::sp<IPower> service = new Power();
     if (service == nullptr) {

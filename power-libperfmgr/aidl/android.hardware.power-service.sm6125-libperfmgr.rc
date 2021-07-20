@@ -1,4 +1,4 @@
-service vendor.power-hal-aidl /vendor/bin/hw/android.hardware.power-service.sm6150-libperfmgr
+service vendor.power-hal-aidl /vendor/bin/hw/android.hardware.power-service.sm6125-libperfmgr
     class hal
     user root
     group system input

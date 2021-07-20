@@ -25,7 +25,7 @@ source "${HELPER}"
 setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${ANDROID_ROOT}" true
 
 # Copyright headers and guards
-write_headers "foles parker def liber odessa minsk hanoip"
+write_headers "doha sofia sofiap sofiar rav"
 
 # The standard common blobs
 write_makefiles "${MY_DIR}/proprietary-files.txt" true
