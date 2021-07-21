@@ -121,7 +121,6 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.0-impl \
     audio.a2dp.default \
     audio.bluetooth.default \
-    audio.primary.trinket \
     audio.r_submix.default \
     audio.usb.default \
     libaudio-resampler \
@@ -134,8 +133,7 @@ PRODUCT_PACKAGES += \
     libsndmonitor \
     libvolumelistener \
     tinymix \
-    libtinycompress \
-    libtinycompress.vendor
+    libtinycompress
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml
@@ -449,10 +447,6 @@ PRODUCT_PACKAGES += \
 # Seccomp policy
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp/mediacodec-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy
-
-# Sensors
-PRODUCT_PACKAGES += \
-    libsensorndkbridge
 
 # Servicetracker
 PRODUCT_PACKAGES += \
