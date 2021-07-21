@@ -33,22 +33,9 @@
 # passed from command line
 #
 
-dbg_on=0
-log_dbg()
-{
-	echo "${0##*/}: $*"
-	[ $dbg_on ] && echo "${0##*/}: $*" > /dev/kmsg
-}
-
-log_info()
-{
-	echo "${0##*/}: $*"
-	echo "${0##*/}: $*" > /dev/kmsg
-}
-
 target=`getprop ro.board.platform`
 usb_action=`getprop vendor.usb.mmi-usb-sh.action`
-log_dbg "mmi-usb-sh: action = \"$usb_action\""
+echo "mmi-usb-sh: action = \"$usb_action\""
 sys_usb_config=`getprop vendor.usb.config`
 factory_usb_config="usbnet"
 factory_usb_config_adb="usbnet,adb"
@@ -56,14 +43,14 @@ factory_usb_config_adb="usbnet,adb"
 tcmd_ctrl_adb ()
 {
     ctrl_adb=`getprop vendor.tcmd.ctrl_adb`
-    log_info "mmi-usb-sh: vendor.tcmd.ctrl_adb = $ctrl_adb"
+    echo "mmi-usb-sh: vendor.tcmd.ctrl_adb = $ctrl_adb"
     case "$ctrl_adb" in
         "0")
             if [[ "$sys_usb_config" == *adb* ]]
             then
                 # *** ALWAYS expecting adb at the end ***
                 new_usb_config=${sys_usb_config/,adb/}
-                log_info "mmi-usb-sh: disabling adb ($new_usb_config)"
+                echo "mmi-usb-sh: disabling adb ($new_usb_config)"
                 setprop persist.vendor.usb.config $new_usb_config
                 setprop vendor.usb.config $new_usb_config
                 setprop persist.vendor.factory.allow_adb 0
@@ -74,7 +61,7 @@ tcmd_ctrl_adb ()
             then
                 # *** ALWAYS expecting adb at the end ***
                 new_usb_config="$sys_usb_config,adb"
-                log_info "mmi-usb-sh: enabling adb ($new_usb_config)"
+                echo "mmi-usb-sh: enabling adb ($new_usb_config)"
                 setprop persist.vendor.usb.config $new_usb_config
                 setprop vendor.usb.config $new_usb_config
                 setprop persist.vendor.factory.allow_adb 1
@@ -300,12 +287,11 @@ securehw=`getprop ro.boot.secure_hardware`
 cid=`getprop ro.vendor.boot.cid`
 diagmode=`getprop persist.vendor.radio.usbdiag`
 
-log_info "mmi-usb-sh: persist usb configs = \"$usb_config\", \"$mot_usb_config\", \"$diagmode\""
+echo "mmi-usb-sh: persist usb configs = \"$usb_config\", \"$mot_usb_config\", \"$diagmode\""
 
 
 phonelock_type=`getprop persist.sys.phonelock.mode`
 usb_restricted=`getprop persist.sys.usb.policylocked`
-log_info "mmi-usb-sh: phonelock.mode=$phonelock_type, usb.policylocked=$usb_restricted, securehw=$securehw, buildtype=$buildtype, cid=$cid"
 if [ "$securehw" == "1" ] && [ "$buildtype" == "user" ] && [ "$(($cid))" != 0 ]
 then
     if [ "$usb_restricted" == "1" ]
@@ -417,7 +403,7 @@ case "$bootmode" in
         if [ "$buildtype" == "user" ] && [ "$phonelock_type" != "1" ] && [ "$usb_restricted" != "1" ]
         then
             echo 1 > /sys/class/android_usb/android0/secure
-            log_info "Disabling enumeration until bootup!"
+            echo "Disabling enumeration until bootup!"
         fi
 
         case "$usb_config" in
@@ -445,7 +431,7 @@ case "$bootmode" in
         adb_early=`getprop ro.boot.adb_early`
         if [ "$adb_early" == "1" ]; then
             echo 0 > /sys/class/android_usb/android0/secure
-            log_info "Enabling enumeration after bootup, count =  $count !"
+            echo "Enabling enumeration after bootup, count =  $count !"
             new_persist_usb_config=`getprop persist.vendor.usb.config`
             if [[ "$new_persist_usb_config" != *adb* ]]; then
                 setprop persist.vendor.usb.config "adb"
@@ -460,20 +446,20 @@ case "$bootmode" in
         then
             count=0
             bootcomplete=`getprop vendor.boot_completed`
-            log_info "mmi-usb-sh - bootcomplete = $booted"
+            echo "mmi-usb-sh - bootcomplete = $booted"
             while [ "$bootcomplete" != "1" ]; do
-                log_dbg "Sleeping till bootup!"
+                echo "Sleeping till bootup!"
                 sleep 1
                 count=$((count+1))
                 if [ $count -gt 90 ]
                 then
-                    log_info "mmi-usb-sh - Timed out waiting for bootup"
+                    echo "mmi-usb-sh - Timed out waiting for bootup"
                     break
                 fi
                 bootcomplete=`getprop vendor.boot_completed`
             done
             echo 0 > /sys/class/android_usb/android0/secure
-            log_info "Enabling enumeration after bootup, count =  $count !"
+            echo "Enabling enumeration after bootup, count =  $count !"
             exit 0
         fi
     ;;

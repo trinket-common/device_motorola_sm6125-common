@@ -12,7 +12,7 @@ on post-fs
     chown cameraserver /mnt/vendor/persist/camera/mot_ledcal
 
 on early-init
-    setprop sys.usb.controller "a800000.dwc3"
+    setprop sys.usb.controller "4e00000.dwc3"
     setprop sys.usb.configfs 1
     exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules exfat utags watchdogtest sensors_class mmi_annotate mmi_info tzlog_dump watchdog_cpu_ctx mmi_sys_temp
 
@@ -39,23 +39,32 @@ on boot
     chown root oem_5004 /sys/class/i2c-adapter/i2c-7/7-002d/hsic_vdd
     chmod 0660 /sys/class/i2c-adapter/i2c-7/7-002d/hsic_vdd
 
-    start ufs_ffu
+on init
+    write /sys/block/zram0/comp_algorithm lz4
 
 # Set hub drive strength to +5%
 on property:ro.bootmode=normal
    write /sys/module/usb3813_hub/parameters/boost_val 2
-
-service ufs_ffu /vendor/bin/ufs_ffu.sh
-    user root
-    class core
-    oneshot
-    disabled
-
-on property:vendor.ufs_need_ffu=1
-    setprop sys.dbg.ufs_ffu_start 1
 
 on property:ro.vendor.build.motfactory=1
     write /sys/class/power_supply/battery/device/factory_image_mode 1
 
 on property:ro.build.type=userdebug
     setprop persist.vendor.qg.log_level 1
+
+on property:sys.boot_completed=1
+    # For cross-reboot FFU script tracking (unencrypted case)
+    mkdir /data/vendor/ffu 0750 shell shell
+    start emmc_ffu
+    # Setting Swappiness
+    write /proc/sys/vm/swappiness 80
+    setprop sys.sysctl.swappiness 80
+
+service emmc_ffu /vendor/bin/emmc_ffu.sh
+    user root
+    class late_start
+    oneshot
+    disabled
+
+on property:vendor.need_ffu=1
+    setprop sys.dbg.ffu_start 1

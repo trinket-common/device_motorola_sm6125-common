@@ -186,6 +186,7 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.class_main.sh \
     init.crda.sh \
+    init.hidl.sensor.rc \
     init.mdm.sh \
     init.mmi.chipset.rc \
     init.mmi.rc \
@@ -196,16 +197,14 @@ PRODUCT_PACKAGES += \
     init.oem.hw.sh \
     init.qcom.class_core.sh \
     init.qcom.coex.sh \
-    init.qcom.crashdata.sh \
     init.qcom.early_boot.sh \
     init.qcom.efs.sync.sh \
+    init.qcom.post_boot.sh \
     init.qcom.rc \
-    init.qcom.power.rc \
     init.qcom.sdio.sh \
     init.qcom.sensors.sh \
     init.qcom.sh \
     init.qti.fm.sh \
-    init.qti.ims.sh \
     init.recovery.qcom.rc \
     init.target.rc \
     ueventd.qcom.rc
