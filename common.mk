@@ -324,6 +324,10 @@ PRODUCT_PACKAGES += \
     ethertypes \
     libebtc
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-service.trinket
+
 # LiveDisplay
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.0-service-sdm \
