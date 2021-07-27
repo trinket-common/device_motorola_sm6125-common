@@ -296,13 +296,7 @@ PRODUCT_PACKAGES += \
     ims-moto-libs
 
 PRODUCT_BOOT_JARS += \
-    ims-moto-libs \
-    moto-ims-ext \
-    moto-telephony
-
-PRODUCT_SYSTEM_SERVER_JARS += \
-    moto-ims-ext \
-    moto-telephony
+    ims-moto-libs
 
 # IPACM
 PRODUCT_PACKAGES += \
@@ -512,6 +506,3 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libnl \
     libwfdaac_vendor
-
-PRODUCT_BOOT_JARS += \
-    WfdCommon
