@@ -7,6 +7,7 @@ vendor/lib/libfastcvdsp_stub.so
 vendor/lib/libfastcvopt.so
 vendor/lib/libmdsprpc.so
 vendor/lib/libsdsprpc.so
+vendor/lib/vendor.qti.hardware.dsp@1.0.so
 vendor/lib64/libadspd.so
 vendor/lib64/libadsprpc.so
 vendor/lib64/libadsp_default_listener.so
@@ -14,6 +15,7 @@ vendor/lib64/libfastcvdsp_stub.so
 vendor/lib64/libfastcvopt.so
 vendor/lib64/libmdsprpc.so
 vendor/lib64/libsdsprpc.so
+vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
 # ADSP-Modules
 vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so
@@ -124,6 +126,10 @@ vendor/lib64/libsysmon_cdsp_skel.so
 -framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar
 -framework/vendor.qti.hardware.data.iwlan-V1.0-java.jar
 -framework/vendor.qti.hardware.data.qmi-V1.0-java.jar
+lib/com.quicinc.cne.api@1.0.so
+lib/com.quicinc.cne.api@1.1.so
+lib/com.quicinc.cne.constants@1.0.so
+lib/com.quicinc.cne.constants@2.1.so
 lib/vendor.qti.data.factory@1.0.so
 lib/vendor.qti.data.factory@2.0.so
 lib/vendor.qti.data.factory@2.1.so
@@ -136,6 +142,10 @@ lib/vendor.qti.hardware.data.connection@1.1.so
 lib/vendor.qti.hardware.data.dynamicdds@1.0.so
 lib/vendor.qti.hardware.data.iwlan@1.0.so
 lib/vendor.qti.hardware.data.qmi@1.0.so
+lib64/com.quicinc.cne.api@1.0.so
+lib64/com.quicinc.cne.api@1.1.so
+lib64/com.quicinc.cne.constants@1.0.so
+lib64/com.quicinc.cne.constants@2.1.so
 lib64/vendor.qti.data.factory@1.0.so
 lib64/vendor.qti.data.factory@2.0.so
 lib64/vendor.qti.data.factory@2.1.so
@@ -202,6 +212,7 @@ vendor/lib/vendor.qti.hardware.data.connection@1.1.so
 vendor/lib/vendor.qti.hardware.data.dynamicdds@1.0.so
 vendor/lib/vendor.qti.hardware.data.iwlan@1.0.so
 vendor/lib/vendor.qti.hardware.data.qmi@1.0.so
+vendor/lib/vendor.qti.hardware.slmadapter@1.0.so
 vendor/lib64/libcne.so
 vendor/lib64/libcneapiclient.so
 vendor/lib64/libcneoplookup.so
@@ -220,6 +231,7 @@ vendor/lib64/vendor.qti.hardware.data.connection@1.1.so
 vendor/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so
 vendor/lib64/vendor.qti.hardware.data.iwlan@1.0.so
 vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so
+vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so
 
 # CVP
 vendor/lib/vendor.qti.hardware.cvp@1.0.so
@@ -521,6 +533,7 @@ vendor/lib/libOmxG711Dec.so
 vendor/lib/libOmxQcelp13Dec.so
 vendor/lib/libOmxWmaDec.so
 vendor/lib/libqcbor.so
+vendor/lib/libstagefright_softomx.so
 vendor/lib/libstagefright_soft_mpeg2dec.so
 vendor/lib/libstagefright_soft_qtiflacdec.so
 vendor/lib/vendor.qti.hardware.vpp@1.1.so
@@ -546,6 +559,7 @@ vendor/lib64/libOmxG711Dec.so
 vendor/lib64/libOmxQcelp13Dec.so
 vendor/lib64/libOmxWmaDec.so
 vendor/lib64/libqcbor.so
+vendor/lib64/libstagefright_softomx.so
 vendor/lib64/libstagefright_soft_qtiflacdec.so
 vendor/lib64/vendor.qti.hardware.vpp@1.1.so
 vendor/lib64/vendor.qti.hardware.vpp@1.2.so
@@ -758,6 +772,7 @@ vendor/lib/libdsi_netctrl.so
 vendor/lib/liblqe.so
 vendor/lib/libmdmcutback.so
 vendor/lib/libmdmdetect.so
+vendor/lib/libmotext_inf.so
 vendor/lib/libnetmgr.so
 vendor/lib/libnetmgr_common.so
 vendor/lib/libnetmgr_nr_fusion.so
@@ -806,6 +821,7 @@ vendor/lib64/libconfigdb.so
 vendor/lib64/libdsi_netctrl.so
 vendor/lib64/liblqe.so
 vendor/lib64/libmdmdetect.so
+vendor/lib64/libmotext_inf.so
 vendor/lib64/libnetmgr.so
 vendor/lib64/libnetmgr_common.so
 vendor/lib64/libnetmgr_nr_fusion.so
@@ -890,6 +906,7 @@ lib64/lib-imsvtutils.so
 lib64/libdiag_system.so
 lib64/libimscamera_jni.so
 lib64/libimsmedia_jni.so
+lib64/vendor.qti.diaghal@1.0.so
 -priv-app/ims/ims.apk
 vendor/bin/imsdatadaemon
 vendor/bin/imsqmidaemon
@@ -1056,6 +1073,9 @@ vendor/lib64/vendor.qti.voiceprint@1.0.so
 bin/wfdservice
 etc/init/wfdservice.rc
 lib/com.qualcomm.qti.wifidisplayhal@1.0.so
+lib/libmmparser_lite.so
+lib/libmmrtpencoder.so
+lib/libmmrtpdecoder.so
 lib/libwfdclient.so
 lib/libwfdcommonutils.so
 lib/libwfddisplayconfig.so
@@ -1070,6 +1090,9 @@ lib/libwfduibcsink.so
 lib/libwfduibcsinkinterface.so
 lib/libwfduibcsrc.so
 lib/libwfduibcsrcinterface.so
+lib64/libmmparser_lite.so
+lib64/libmmrtpencoder.so
+lib64/libmmrtpdecoder.so
 lib64/libwfdclient.so
 lib64/libwfdcommonutils.so
 lib64/libwfddisplayconfig.so
